@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{b0f766be-9dd1-4b89-9408-2e10fd68ba44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global">
+      <UniqueIdentifier>{4de303c4-8581-4abe-bbda-a37877ffe081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global\Define">
+      <UniqueIdentifier>{f244d8e8-802d-4d25-9857-c1fd2f758c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_01 %28C 기초%29">
+      <UniqueIdentifier>{d0e61cb2-3722-48e0-a9cd-4a846c0715fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_05 %28반복문%29">
+      <UniqueIdentifier>{162cb55c-8cc1-42ce-a376-e80ed1a5a65e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_04 %28조건문%29">
+      <UniqueIdentifier>{bccbe4f4-654d-4d17-bf39-66932432bd61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_03 %28연산자%29">
+      <UniqueIdentifier>{63880cfa-87d5-4c3b-9dd5-14a94180f844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_06 %28배열%29">
+      <UniqueIdentifier>{3fbecad6-f724-4b62-b6fc-b70af8522dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_07 %28함수%29">
+      <UniqueIdentifier>{9bfe1351-a677-4c56-bad9-e5d24a5adffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_02 %28변수/상수%29">
+      <UniqueIdentifier>{062d5c2d-70c7-46ed-8247-49f66488562f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classes\Global\Define\KGDefine.h">
+      <Filter>Classes\Global\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_01\Example_01.h">
+      <Filter>Classes\Example_01 %28C 기초%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_02\Example_02.h">
+      <Filter>Classes\Example_02 %28변수/상수%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_03\Example_03.h">
+      <Filter>Classes\Example_03 %28연산자%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_04\Example_04.h">
+      <Filter>Classes\Example_04 %28조건문%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_05\Example_05.h">
+      <Filter>Classes\Example_05 %28반복문%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_06\Example_06.h">
+      <Filter>Classes\Example_06 %28배열%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_07\Example_07.h">
+      <Filter>Classes\Example_07 %28함수%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\Example.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_01\Example_01.cpp">
+      <Filter>Classes\Example_01 %28C 기초%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_02\Example_02.cpp">
+      <Filter>Classes\Example_02 %28변수/상수%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_03\Example_03.cpp">
+      <Filter>Classes\Example_03 %28연산자%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_04\Example_04.cpp">
+      <Filter>Classes\Example_04 %28조건문%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_05\Example_05.cpp">
+      <Filter>Classes\Example_05 %28반복문%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_06\Example_06.cpp">
+      <Filter>Classes\Example_06 %28배열%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_07\Example_07.cpp">
+      <Filter>Classes\Example_07 %28함수%29</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

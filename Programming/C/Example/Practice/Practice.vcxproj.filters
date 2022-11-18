@@ -14,15 +14,60 @@
     <Filter Include="Classes\Global\Define">
       <UniqueIdentifier>{ac15591f-a7c1-41fd-a19b-2636306151b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Practice_02 %28변수/상수%29">
+      <UniqueIdentifier>{cfe719fc-3ae9-42ad-aa63-b34b08ce7666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Practice_01 %28C 기초%29">
+      <UniqueIdentifier>{5c62e648-187a-421c-b112-69d5d3da66dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Practice_03 %28연산자%29">
+      <UniqueIdentifier>{a272f41e-5776-48b6-a037-39a398586d08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Practice_04 %28조건문%29">
+      <UniqueIdentifier>{7f6caa40-ed96-4955-adcc-38d002910278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Practice_05 %28반복문%29">
+      <UniqueIdentifier>{10703c8b-5650-462e-8b80-59898de00be6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
       <Filter>Classes\Global\Define</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Practice_02\Practice_02.h">
+      <Filter>Classes\Practice_02 %28변수/상수%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Practice_01\Practice_01.h">
+      <Filter>Classes\Practice_01 %28C 기초%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Practice_03\Practice_03.h">
+      <Filter>Classes\Practice_03 %28연산자%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Practice_04\Practice_04.h">
+      <Filter>Classes\Practice_04 %28조건문%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Practice_05\Practice_05.h">
+      <Filter>Classes\Practice_05 %28반복문%29</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Practice.cpp">
       <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_02\Practice_02.cpp">
+      <Filter>Classes\Practice_02 %28변수/상수%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_01\Practice_01.cpp">
+      <Filter>Classes\Practice_01 %28C 기초%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_03\Practice_03.cpp">
+      <Filter>Classes\Practice_03 %28연산자%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_04\Practice_04.cpp">
+      <Filter>Classes\Practice_04 %28조건문%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_05\Practice_05.cpp">
+      <Filter>Classes\Practice_05 %28반복문%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

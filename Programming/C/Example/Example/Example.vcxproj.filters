@@ -35,6 +35,9 @@
     <Filter Include="Classes\Example_02 %28변수/상수%29">
       <UniqueIdentifier>{062d5c2d-70c7-46ed-8247-49f66488562f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Example_08 %28포인터%29">
+      <UniqueIdentifier>{e295b1b6-3a6e-44f2-88e4-0d2b146299dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -61,6 +64,9 @@
     <ClInclude Include="Classes\Example_07\Example_07.h">
       <Filter>Classes\Example_07 %28함수%29</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Example_08\Example_08.h">
+      <Filter>Classes\Example_08 %28포인터%29</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Example.cpp">
@@ -86,6 +92,9 @@
     </ClCompile>
     <ClCompile Include="Classes\Example_07\Example_07.cpp">
       <Filter>Classes\Example_07 %28함수%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_08\Example_08.cpp">
+      <Filter>Classes\Example_08 %28포인터%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

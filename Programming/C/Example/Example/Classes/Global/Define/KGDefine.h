@@ -3,4 +3,5 @@
 
 #include <stdio.h>
 #include <assert.h>
-#include <Windows.h>
+#include <stdlib.h>
+#include <time.h>

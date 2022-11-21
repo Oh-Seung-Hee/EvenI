@@ -67,7 +67,6 @@ namespace E08 {
 		const int* const pnConstVal03 = &nVal;
 
 		SetupVals(anVals, sizeof(anVals) / sizeof(anVals[0]));
-
 		printf("=====> 배열 요소 <=====\n");
 
 		for(int i = 0; i < sizeof(anVals) / sizeof(anVals[0]); ++i) {

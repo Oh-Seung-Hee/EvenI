@@ -20,9 +20,6 @@
     <Filter Include="Classes\Practice_01 %28C 기초%29">
       <UniqueIdentifier>{5c62e648-187a-421c-b112-69d5d3da66dc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Practice_03 %28연산자%29">
-      <UniqueIdentifier>{a272f41e-5776-48b6-a037-39a398586d08}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Classes\Practice_04 %28조건문%29">
       <UniqueIdentifier>{7f6caa40-ed96-4955-adcc-38d002910278}</UniqueIdentifier>
     </Filter>
@@ -40,9 +37,6 @@
     <ClInclude Include="Classes\Practice_01\Practice_01.h">
       <Filter>Classes\Practice_01 %28C 기초%29</Filter>
     </ClInclude>
-    <ClInclude Include="Classes\Practice_03\Practice_03.h">
-      <Filter>Classes\Practice_03 %28연산자%29</Filter>
-    </ClInclude>
     <ClInclude Include="Classes\Practice_04\Practice_04.h">
       <Filter>Classes\Practice_04 %28조건문%29</Filter>
     </ClInclude>
@@ -59,9 +53,6 @@
     </ClCompile>
     <ClCompile Include="Classes\Practice_01\Practice_01.cpp">
       <Filter>Classes\Practice_01 %28C 기초%29</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Practice_03\Practice_03.cpp">
-      <Filter>Classes\Practice_03 %28연산자%29</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Practice_04\Practice_04.cpp">
       <Filter>Classes\Practice_04 %28조건문%29</Filter>

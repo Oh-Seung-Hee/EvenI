@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b90d4ab2-f0b5-4955-a0e0-00107faf72e3}</ProjectGuid>
-    <RootNamespace>Practice</RootNamespace>
+    <ProjectGuid>{b434f65a-77ca-4348-9756-6197f5b8b15e}</ProjectGuid>
+    <RootNamespace>Solve</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -129,18 +129,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Classes\Global\Define\KGDefine.h" />
-    <ClInclude Include="Classes\Practice_01\Practice_01.h" />
-    <ClInclude Include="Classes\Practice_02\Practice_02.h" />
-    <ClInclude Include="Classes\Practice_04\Practice_04.h" />
-    <ClInclude Include="Classes\Practice_05\Practice_05.h" />
+    <ClCompile Include="Classes\Solve.cpp" />
+    <ClCompile Include="Classes\Solve_01\Solve_01.cpp" />
+    <ClCompile Include="Classes\Solve_02\Solve_02.cpp" />
+    <ClCompile Include="Classes\Solve_04\Solve_04.cpp" />
+    <ClCompile Include="Classes\Solve_05\Solve_05.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes\Practice.cpp" />
-    <ClCompile Include="Classes\Practice_01\Practice_01.cpp" />
-    <ClCompile Include="Classes\Practice_02\Practice_02.cpp" />
-    <ClCompile Include="Classes\Practice_04\Practice_04.cpp" />
-    <ClCompile Include="Classes\Practice_05\Practice_05.cpp" />
+    <ClInclude Include="Classes\Global\Define\KGDefine.h" />
+    <ClInclude Include="Classes\Solve_01\Solve_01.h" />
+    <ClInclude Include="Classes\Solve_02\Solve_02.h" />
+    <ClInclude Include="Classes\Solve_04\Solve_04.h" />
+    <ClInclude Include="Classes\Solve_05\Solve_05.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,8 +1,8 @@
 #include "Example_07.h"
 
-//#define E07_FUNC_01
-//#define E07_FUNC_02
-//#define E07_FUNC_03
+#define E07_FUNC_01
+#define E07_FUNC_02
+#define E07_FUNC_03
 #define E07_FUNC_04
 
 namespace E07 {
@@ -52,7 +52,7 @@ namespace E07 {
 			a_pnVals[i] = rand() % 100;
 		}
 	}
-	
+
 	/** 합계를 반환한다 */
 	int GetSumVal(int a_pnVals[], int a_nSize) {
 		int nSumVal = 0;
@@ -130,7 +130,19 @@ namespace E07 {
 
 		printf("\n\n합계: %d\n", GetSumVal(anVals, sizeof(anVals) / sizeof(anVals[0])));
 #elif defined E07_FUNC_04
-		PrintHanoiTower(4, 1, 3);
+		int nVal = 0;
+
+		printf("정수 입력 : ");
+		scanf("%d", &nVal);
+
+		printf("\n=====> 재귀 함수 - 1 <=====\n");
+		printf("%d! = %d\n", nVal, GetFactorial(nVal));
+
+		printf("\n정수 입력 : ");
+		scanf("%d", &nVal);
+
+		printf("\n=====> 재귀 함수 - 2 <=====\n");
+		PrintHanoiTower(nVal, 1, 3);
 #endif			// #if defined E07_FUNC_01
 
 		return 0;

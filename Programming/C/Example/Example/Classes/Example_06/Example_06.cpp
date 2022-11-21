@@ -1,6 +1,6 @@
 #include "Example_06.h"
 
-//#define E06_SINGLE
+#define E06_SINGLE
 #define E06_MULTI
 
 namespace E06 {

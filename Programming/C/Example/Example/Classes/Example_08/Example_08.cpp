@@ -1,10 +1,10 @@
 #include "Example_08.h"
 
-//#define E08_PTR_01
-//#define E08_PTR_02
-//#define E08_PTR_03
-//#define E08_PTR_04
-//#define E08_PTR_05
+#define E08_PTR_01
+#define E08_PTR_02
+#define E08_PTR_03
+#define E08_PTR_04
+#define E08_PTR_05
 #define E08_PTR_06
 
 namespace E08 {

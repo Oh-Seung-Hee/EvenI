@@ -136,6 +136,7 @@
     <ClInclude Include="Classes\Practice_05\Practice_05.h" />
     <ClInclude Include="Classes\Practice_06\Practice_06.h" />
     <ClInclude Include="Classes\Practice_07\Practice_07.h" />
+    <ClInclude Include="Classes\Practice_08\Practice_08.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Practice.cpp" />
@@ -145,6 +146,7 @@
     <ClCompile Include="Classes\Practice_05\Practice_05.cpp" />
     <ClCompile Include="Classes\Practice_06\Practice_06.cpp" />
     <ClCompile Include="Classes\Practice_07\Practice_07.cpp" />
+    <ClCompile Include="Classes\Practice_08\Practice_08.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

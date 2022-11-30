@@ -32,6 +32,9 @@
     <Filter Include="Classes\Practice_07 %28함수%29">
       <UniqueIdentifier>{772a61ea-256e-439c-ab16-9686bc0fab6a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Practice_08 %28포인터%29">
+      <UniqueIdentifier>{6948d06a-6de2-4e15-9406-2cc5edb39e01}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -55,11 +58,11 @@
     <ClInclude Include="Classes\Practice_07\Practice_07.h">
       <Filter>Classes\Practice_07 %28함수%29</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Practice_08\Practice_08.h">
+      <Filter>Classes\Practice_08 %28포인터%29</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes\Practice.cpp">
-      <Filter>Classes</Filter>
-    </ClCompile>
     <ClCompile Include="Classes\Practice_02\Practice_02.cpp">
       <Filter>Classes\Practice_02 %28변수/상수%29</Filter>
     </ClCompile>
@@ -77,6 +80,12 @@
     </ClCompile>
     <ClCompile Include="Classes\Practice_07\Practice_07.cpp">
       <Filter>Classes\Practice_07 %28함수%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_08\Practice_08.cpp">
+      <Filter>Classes\Practice_08 %28포인터%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

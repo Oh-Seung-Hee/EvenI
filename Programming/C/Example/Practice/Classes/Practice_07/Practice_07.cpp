@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-//#define P07_01
+#define P07_01
 #define P07_02
 #define P07_03
 

@@ -134,6 +134,8 @@
     <ClCompile Include="Classes\Solve_02\Solve_02.cpp" />
     <ClCompile Include="Classes\Solve_04\Solve_04.cpp" />
     <ClCompile Include="Classes\Solve_05\Solve_05.cpp" />
+    <ClCompile Include="Classes\Solve_06\Solve_06.cpp" />
+    <ClCompile Include="Classes\Solve_07\Solve_07.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h" />
@@ -141,6 +143,8 @@
     <ClInclude Include="Classes\Solve_02\Solve_02.h" />
     <ClInclude Include="Classes\Solve_04\Solve_04.h" />
     <ClInclude Include="Classes\Solve_05\Solve_05.h" />
+    <ClInclude Include="Classes\Solve_06\Solve_06.h" />
+    <ClInclude Include="Classes\Solve_07\Solve_07.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

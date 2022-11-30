@@ -137,6 +137,10 @@
     <ClInclude Include="Classes\Example_06\Example_06.h" />
     <ClInclude Include="Classes\Example_07\Example_07.h" />
     <ClInclude Include="Classes\Example_08\Example_08.h" />
+    <ClInclude Include="Classes\Example_09\Example_09.h" />
+    <ClInclude Include="Classes\Example_10\Example_10.h" />
+    <ClInclude Include="Classes\Example_11\Example_11.h" />
+    <ClInclude Include="Classes\Example_12\Example_12.h" />
     <ClInclude Include="Classes\Global\Define\KGDefine.h" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +153,10 @@
     <ClCompile Include="Classes\Example_06\Example_06.cpp" />
     <ClCompile Include="Classes\Example_07\Example_07.cpp" />
     <ClCompile Include="Classes\Example_08\Example_08.cpp" />
+    <ClCompile Include="Classes\Example_09\Example_09.cpp" />
+    <ClCompile Include="Classes\Example_10\Example_10.cpp" />
+    <ClCompile Include="Classes\Example_11\Example_11.cpp" />
+    <ClCompile Include="Classes\Example_12\Example_12.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

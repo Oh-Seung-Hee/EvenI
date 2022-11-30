@@ -32,6 +32,9 @@
     <Filter Include="Classes\Solve_07 %28함수%29">
       <UniqueIdentifier>{0027b851-4028-42ce-9ce8-2617cfe788ad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Solve_08 %28포인터%29">
+      <UniqueIdentifier>{f91dc7b0-60d6-4fc1-8c24-b29c07c6b7d8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Solve.cpp">
@@ -55,6 +58,9 @@
     <ClCompile Include="Classes\Solve_06\Solve_06.cpp">
       <Filter>Classes\Solve_06 %28배열%29</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Solve_08\Solve_08.cpp">
+      <Filter>Classes\Solve_08 %28포인터%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -77,6 +83,9 @@
     </ClInclude>
     <ClInclude Include="Classes\Solve_07\Solve_07.h">
       <Filter>Classes\Solve_07 %28함수%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Solve_08\Solve_08.h">
+      <Filter>Classes\Solve_08 %28포인터%29</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

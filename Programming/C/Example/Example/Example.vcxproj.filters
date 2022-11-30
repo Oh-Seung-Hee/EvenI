@@ -38,6 +38,18 @@
     <Filter Include="Classes\Example_08 %28포인터%29">
       <UniqueIdentifier>{e295b1b6-3a6e-44f2-88e4-0d2b146299dd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Example_09 %28사용자 정의 자료형%29">
+      <UniqueIdentifier>{41a2f1c2-4865-4c7b-8b07-b4d204f6146c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_10 %28동적 할당%29">
+      <UniqueIdentifier>{adeeb275-4333-40b6-8f01-a63d4a263dc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_11 %28파일 시스템%29">
+      <UniqueIdentifier>{d185f6ff-1ae7-4cef-9365-92fa69535fa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_12 %28모듈화 프로그래밍%29">
+      <UniqueIdentifier>{d97aa616-7aec-423a-b898-019d8b180aae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -67,6 +79,18 @@
     <ClInclude Include="Classes\Example_08\Example_08.h">
       <Filter>Classes\Example_08 %28포인터%29</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Example_09\Example_09.h">
+      <Filter>Classes\Example_09 %28사용자 정의 자료형%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_10\Example_10.h">
+      <Filter>Classes\Example_10 %28동적 할당%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_11\Example_11.h">
+      <Filter>Classes\Example_11 %28파일 시스템%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_12\Example_12.h">
+      <Filter>Classes\Example_12 %28모듈화 프로그래밍%29</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Example.cpp">
@@ -95,6 +119,18 @@
     </ClCompile>
     <ClCompile Include="Classes\Example_08\Example_08.cpp">
       <Filter>Classes\Example_08 %28포인터%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_09\Example_09.cpp">
+      <Filter>Classes\Example_09 %28사용자 정의 자료형%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_10\Example_10.cpp">
+      <Filter>Classes\Example_10 %28동적 할당%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_11\Example_11.cpp">
+      <Filter>Classes\Example_11 %28파일 시스템%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_12\Example_12.cpp">
+      <Filter>Classes\Example_12 %28모듈화 프로그래밍%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

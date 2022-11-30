@@ -6,6 +6,10 @@
 #include "Example_06/Example_06.h"
 #include "Example_07/Example_07.h"
 #include "Example_08/Example_08.h"
+#include "Example_09/Example_09.h"
+#include "Example_10/Example_10.h"
+#include "Example_11/Example_11.h"
+#include "Example_12/Example_12.h"
 
 /*
 extern 키워드를 활용하면 다른 파일에 선언 된 전역 변수를 가져오는 것이 가능하다. 단, 해당 키워드로 선언 된 전역 변수가 정적
@@ -41,5 +45,9 @@ int main(int argc, char* args[]) {
 	//return E05::Example_05(argc, args);
 	//return E06::Example_06(argc, args);
 	//return E07::Example_07(argc, args);
-	return E08::Example_08(argc, args);
+	//return E08::Example_08(argc, args);
+	return E09::Example_09(argc, args);
+	//return E10::Example_10(argc, args);
+	//return E11::Example_11(argc, args);
+	//return E12::Example_12(argc, args);
 }

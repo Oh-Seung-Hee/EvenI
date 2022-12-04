@@ -4,9 +4,6 @@ root = true
 [*]
 charset = utf-8
 
-# C/C++ 파일
-[*.{c++,cc,cpp,cppm,cxx,h,h++,hh,hpp,hxx,inl,ipp,ixx,tlh,tli}]
-
 # Visual C++ 코드 스타일 설정
 
 cpp_generate_documentation_comments = xml
@@ -71,9 +68,6 @@ cpp_space_around_assignment_operator = insert
 cpp_space_pointer_reference_alignment = left
 cpp_space_around_ternary_operator = insert
 cpp_wrap_preserve_blocks = never
-
-# C# 파일
-[*.cs]
 
 #### 코어 EditorConfig 옵션 ####
 

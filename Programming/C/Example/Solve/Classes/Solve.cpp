@@ -14,7 +14,7 @@ int main(int argc, char* args[]) {
 	//return S02::Solve_02(argc, args);
 	//return S04::Solve_04(argc, args);
 	//return S05::Solve_05(argc, args);
-	return S06::Solve_06(argc, args);
+	//return S06::Solve_06(argc, args);
 	//return S07::Solve_07(argc, args);
-	//return S08::Solve_08(argc, args);
+	return S08::Solve_08(argc, args);
 }

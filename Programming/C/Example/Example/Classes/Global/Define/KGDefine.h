@@ -6,3 +6,4 @@
 #include <stdlib.h>
 #include <time.h>
 #include <float.h>
+#include <string.h>

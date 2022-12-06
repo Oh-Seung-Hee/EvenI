@@ -14,6 +14,7 @@ namespace P06 {
 		//int ball = 0, strike = 0;	// ball와 strike 선언
 
 		/*
+		Note.
 		srand 함수를 통한 시드 값 설정은 프로그램이 구동 될 때 한번만 해주시면 됩니다.
 		*/
 		// 숫자 랜덤으로 정답 배열 안에 생성
@@ -41,6 +42,7 @@ namespace P06 {
 			scanf("%d %d %d %d", &inputNum[0], &inputNum[1], &inputNum[2], &inputNum[3]);
 
 			/*
+			Note.
 			아래 조건문 같은 경우 조건문의 구성을 변경해주는 것으로 조금이나마 속도 향상을 하는 것이 가능합니다.
 
 			Ex)

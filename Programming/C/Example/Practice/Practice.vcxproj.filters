@@ -35,6 +35,9 @@
     <Filter Include="Classes\Practice_08 %28포인터%29">
       <UniqueIdentifier>{6948d06a-6de2-4e15-9406-2cc5edb39e01}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Practice_09 %28사용자 정의 자료형%29">
+      <UniqueIdentifier>{42b241f4-31dd-47c1-a017-6fc1c8a8e166}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -61,6 +64,9 @@
     <ClInclude Include="Classes\Practice_08\Practice_08.h">
       <Filter>Classes\Practice_08 %28포인터%29</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Practice_09\Practice_09.h">
+      <Filter>Classes\Practice_09 %28사용자 정의 자료형%29</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Practice_02\Practice_02.cpp">
@@ -86,6 +92,9 @@
     </ClCompile>
     <ClCompile Include="Classes\Practice_08\Practice_08.cpp">
       <Filter>Classes\Practice_08 %28포인터%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_09\Practice_09.cpp">
+      <Filter>Classes\Practice_09 %28사용자 정의 자료형%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

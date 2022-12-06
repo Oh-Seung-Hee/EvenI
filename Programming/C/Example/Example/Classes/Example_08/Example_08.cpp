@@ -5,7 +5,9 @@
 //#define E08_PTR_03
 //#define E08_PTR_04
 //#define E08_PTR_05
-#define E08_PTR_06
+//#define E08_PTR_06
+//#define E08_PTR_07
+#define E08_PTR_08
 
 namespace E08 {
 #if defined E08_PTR_01
@@ -135,6 +137,17 @@ namespace E08 {
 		const int* pnPtr02 = (const int*)a_pvPtr02;
 
 		return *pnPtr02 - *pnPtr01;
+	}
+#elif defined E08_PTR_07
+	/** 최소, 최대 값을 반환한다 */
+	void GetMinMaxVal(int a_pnVals[], int a_nSize, int* a_pnOutMinVal, int* a_pnOutMaxVal) {
+		*a_pnOutMinVal = a_pnVals[0];
+		*a_pnOutMaxVal = a_pnVals[0];
+
+		for(int i = 1; i < a_nSize; ++i) {
+			*a_pnOutMinVal = (*a_pnOutMinVal < a_pnVals[i]) ? *a_pnOutMinVal : a_pnVals[i];
+			*a_pnOutMaxVal = (*a_pnOutMaxVal > a_pnVals[i]) ? *a_pnOutMaxVal : a_pnVals[i];
+		}
 	}
 #endif // #if defined E08_PTR_01
 
@@ -343,6 +356,38 @@ namespace E08 {
 		}
 
 		printf("\n");
+#elif defined E08_PTR_07
+		int anVals[10] = { 0 };
+
+		for(int i = 0; i < 10; ++i) {
+			anVals[i] = rand() % 100;
+			printf("%d, ", anVals[i]);
+		}
+
+		int nMinVal = 0;
+		int nMaxVal = 0;
+
+		GetMinMaxVal(anVals, 10, &nMinVal, &nMaxVal);
+
+		printf("최소 값 : %d\n", nMinVal);
+		printf("최대 값 : %d\n", nMaxVal);
+#elif defined E08_PTR_08
+		int nVal = 0;
+		float fVal = 0.0f;
+
+		int* pnVal = &nVal;
+		float* pfVal = &fVal;
+
+		*pnVal = 10;
+		*pfVal = 3.14f;
+
+		void* pvPtr01 = &nVal;
+		void* pvPtr02 = &fVal;
+
+		*((int*)pvPtr01) = 10;
+		*((double*)pvPtr01) = 3.14;
+
+		*((float*)pvPtr02) = 3.14f;
 #endif // #if defined E08_PTR_01
 
 		return 0;

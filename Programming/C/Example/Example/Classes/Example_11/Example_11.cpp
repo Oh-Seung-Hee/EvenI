@@ -15,7 +15,8 @@ namespace E11 {
 
 	int Example_11(int argc, char* args[]) {
 #if defined E11_FILE_SYSTEM_01
-
+		FILE* pfWStream = fopen("Resources/Example_11/Example_11_01.txt", "wt");
+		fclose(pfWStream);
 #elif defined E11_FILE_SYSTEM_02
 
 #elif defined E11_FILE_SYSTEM_03

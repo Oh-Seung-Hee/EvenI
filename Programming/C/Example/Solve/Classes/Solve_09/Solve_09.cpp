@@ -1,7 +1,7 @@
 #include "Solve_09.h"
 
-#define S09_01
-#define S09_02
+//#define S09_01
+//#define S09_02
 #define S09_03
 
 namespace S09 {
@@ -85,33 +85,119 @@ namespace S09 {
 		}
 	}
 #elif defined S09_03
-	/** 값을 설정한다 */
-	void SetupVals(char* a_pszStrs[], int a_nSize) {
-		for(int i = 0; i < a_nSize; ++i) {
-			char szStr[100] = "";
-			sprintf(szStr, "%d", rand() % 15);
+	/** 메뉴 */
+	enum class EMenu {
+		NONE = -1,
+		ADD_MEMBER,
+		REMOVE_MEMBER,
+		SEARCH_MEMBER,
+		PRINT_ALL_MEMBERS,
+		EXIT,
+		MAX_VAL
+	};
 
-			a_pszStrs[i] = (char*)malloc(sizeof(char) * (strlen(szStr) + 1));
-			strcpy(a_pszStrs[i], szStr);
+	/** 회원 */
+	struct STMember {
+		char m_szName[100];
+		char m_szPhoneNumber[100];
+	};
+
+	/** 회원 관리자 */
+	struct STMemberManager {
+		int m_nNumMembers;
+		STMember m_astMembers[100];
+	};
+
+	/** 회원을 탐색한다 */
+	int FindMember(STMemberManager* a_pstMemberManager, char a_pszName[]) {
+		for(int i = 0; i < a_pstMemberManager->m_nNumMembers; ++i) {
+			// 회원이 존재 할 경우
+			if(strcmp(a_pstMemberManager->m_astMembers[i].m_szName, a_pszName) == 0) {
+				return i;
+			}
+		}
+
+		return -1;
+	}
+
+	/** 회원을 추가한다 */
+	void AddMember(STMemberManager* a_pstMemberManager) {
+		STMember stMember;
+		memset(&stMember, 0, sizeof(stMember));
+
+		printf("\n=====> 회원 추가 <=====\n");
+
+		printf("이름 입력 : ");
+		scanf("%[^\n]s", stMember.m_szName);
+
+		getchar();
+
+		printf("전화번호 입력 : ");
+		scanf("%[^\n]s", stMember.m_szPhoneNumber);
+
+		int nIdx = FindMember(a_pstMemberManager, stMember.m_szName);
+
+		// 회원이 존재 할 경우
+		if(nIdx >= 0) {
+			printf("\n%s 은 이미 존재하는 회원입니다.\n", stMember.m_szName);
+		} else {
+			a_pstMemberManager->m_astMembers[a_pstMemberManager->m_nNumMembers++] = stMember;
+			printf("\n%s 을(를) 추가했습니다.\n", stMember.m_szName);
 		}
 	}
 
-	/** 값을 치환한다 */
-	void ReplaceVals(char* a_pszStrs[], int a_nSize, int a_nIdx) {
-		// 치환이 불가능 할 경우
-		if(a_nIdx < 0 || a_nIdx >= a_nSize || strcmp(a_pszStrs[a_nIdx], "x") == 0) {
-			return;
+	/** 회원을 삭제한다 */
+	void RemoveMember(STMemberManager* a_pstMemberManager) {
+		char szName[100] = "";
+		printf("\n=====> 회원 삭제 <=====\n");
+
+		printf("이름 입력 : ");
+		scanf("%[^\n]s", szName);
+
+		getchar();
+		int nIdx = FindMember(a_pstMemberManager, szName);
+
+		// 회원이 존재 할 경우
+		if(nIdx >= 0) {
+			for(int i = nIdx; i < a_pstMemberManager->m_nNumMembers - 1; ++i) {
+				a_pstMemberManager->m_astMembers[i] = a_pstMemberManager->m_astMembers[i + 1];
+			}
+
+			a_pstMemberManager->m_nNumMembers -= 1;
+			printf("\n%s 을(를) 삭제했습니다.\n", szName);
+		} else {
+			printf("\n%s 은 존재하지 않는 회원입니다.\n", szName);
 		}
+	}
 
-		int nVal = 0;
-		sscanf(a_pszStrs[a_nIdx], "%d", &nVal);
+	/** 회원을 조회한다 */
+	void SearchMember(STMemberManager* a_pstMemberManager) {
+		char szName[100] = "";
+		printf("\n=====> 회원 조회 <=====\n");
 
-		// 치환 가능 할 경우
-		if(nVal < 10) {
-			strcpy(a_pszStrs[a_nIdx], "x");
+		printf("이름 입력 : ");
+		scanf("%[^\n]s", szName);
 
-			ReplaceVals(a_pszStrs, a_nSize, a_nIdx - 1);
-			ReplaceVals(a_pszStrs, a_nSize, a_nIdx + 1);
+		getchar();
+		int nIdx = FindMember(a_pstMemberManager, szName);
+
+		// 회원이 존재 할 경우
+		if(nIdx >= 0) {
+			printf("\n=====> 회원 정보 <=====\n");
+			printf("이름 : %s\n", a_pstMemberManager->m_astMembers[nIdx].m_szName);
+			printf("전화번호 : %s\n", a_pstMemberManager->m_astMembers[nIdx].m_szPhoneNumber);
+		} else {
+			printf("\n%s 은 존재하지 않는 회원입니다.\n", szName);
+		}
+	}
+
+	/** 모든 회원을 출력한다 */
+	void PrintAllMembers(STMemberManager* a_pstMemberManager) {
+		printf("\n=====> 모든 회원 정보 <=====\n");
+
+		for(int i = 0; i < a_pstMemberManager->m_nNumMembers; ++i) {
+			printf("이름 : %s\n", a_pstMemberManager->m_astMembers[i].m_szName);
+			printf("전화번호 : %s\n\n", a_pstMemberManager->m_astMembers[i].m_szPhoneNumber);
 		}
 	}
 #endif // #if defined S09_01
@@ -160,33 +246,34 @@ namespace S09 {
 		printf("\n=====> 배열 요소 - 회전 후 <=====\n");
 		PrintVals(anVals, nNumRows, nNumCols);
 #elif defined S09_03
-		char* apszStrs[20];
-		const int nSize = sizeof(apszStrs) / sizeof(apszStrs[0]);
+		EMenu eSelMenu = EMenu::NONE;
 
-		SetupVals(apszStrs, nSize);
-		printf("=====> 배열 요소 <=====\n");
+		STMemberManager stMemberManager;
+		memset(&stMemberManager, 0, sizeof(stMemberManager));
 
-		for(int i = 0; i < nSize; ++i) {
-			printf("%s, ", apszStrs[i]);
-		}
+		do {
+			printf("=====> 메뉴 <=====\n");
+			printf("1. 회원 추가\n");
+			printf("2. 회원 삭제\n");
+			printf("3. 회원 조회\n");
+			printf("4. 모든 회원 출력\n");
+			printf("5. 종료\n");
 
-		int nIdx = 0;
+			printf("\n메뉴 선택 : ");
+			scanf("%d", &eSelMenu);
 
-		printf("\n\n위치 입력 : ");
-		scanf("%d", &nIdx);
+			getchar();
+			eSelMenu = (EMenu)((int)eSelMenu - 1);
 
-		ReplaceVals(apszStrs, nSize, nIdx);
-		printf("\n=====> 배열 요소 - 치환 후 <=====\n");
+			switch(eSelMenu) {
+				case EMenu::ADD_MEMBER: AddMember(&stMemberManager); break;
+				case EMenu::REMOVE_MEMBER: RemoveMember(&stMemberManager); break;
+				case EMenu::SEARCH_MEMBER: SearchMember(&stMemberManager); break;
+				case EMenu::PRINT_ALL_MEMBERS: PrintAllMembers(&stMemberManager); break;
+			}
 
-		for(int i = 0; i < nSize; ++i) {
-			printf("%s, ", apszStrs[i]);
-		}
-
-		for(int i = 0; i < nSize; ++i) {
-			free(apszStrs[i]);
-		}
-
-		printf("\n");
+			printf("\n");
+		} while(eSelMenu != EMenu::EXIT);
 #endif // #if defined S09_01
 
 		return 0;

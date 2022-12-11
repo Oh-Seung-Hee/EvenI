@@ -5,6 +5,7 @@
 #include "Solve_06/Solve_06.h"
 #include "Solve_07/Solve_07.h"
 #include "Solve_08/Solve_08.h"
+#include "Solve_09/Solve_09.h"
 
 /** 메인 함수 */
 int main(int argc, char* args[]) {
@@ -16,5 +17,6 @@ int main(int argc, char* args[]) {
 	//return S05::Solve_05(argc, args);
 	//return S06::Solve_06(argc, args);
 	//return S07::Solve_07(argc, args);
-	return S08::Solve_08(argc, args);
+	//return S08::Solve_08(argc, args);
+	return S09::Solve_09(argc, args);
 }

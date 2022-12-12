@@ -158,6 +158,9 @@
     <ClCompile Include="Classes\Example_11\Example_11.cpp" />
     <ClCompile Include="Classes\Example_12\Example_12.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Example_11\Example_11_03.bin" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -50,6 +50,9 @@
     <Filter Include="Classes\Example_12 %28모듈화 프로그래밍%29">
       <UniqueIdentifier>{d97aa616-7aec-423a-b898-019d8b180aae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\Example_11">
+      <UniqueIdentifier>{16036abd-fef6-41f5-a044-32df7738eb32}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -132,5 +135,10 @@
     <ClCompile Include="Classes\Example_12\Example_12.cpp">
       <Filter>Classes\Example_12 %28모듈화 프로그래밍%29</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Example_11\Example_11_03.bin">
+      <Filter>리소스 파일\Example_11</Filter>
+    </None>
   </ItemGroup>
 </Project>

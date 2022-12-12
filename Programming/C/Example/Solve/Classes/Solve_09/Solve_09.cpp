@@ -1,7 +1,7 @@
 #include "Solve_09.h"
 
-#define S09_01
-#define S09_02
+//#define S09_01
+//#define S09_02
 #define S09_03
 
 namespace S09 {
@@ -9,7 +9,7 @@ namespace S09 {
 	/** 문자열을 출력한다 */
 	void PrintDigitStrs(const char* a_pszDigitStr, const char* a_pszStr) {
 		for(int i = 0; i < strlen(a_pszStr); ++i) {
-			char szStr[10] = "";
+			char szStr[100] = "";
 
 			// 숫자 일 경우
 			if(isdigit(a_pszStr[i])) {
@@ -51,10 +51,10 @@ namespace S09 {
 				int nLBCol = i;
 
 				int nRTRow = j;
-				int nRTCol = a_nNumRows - (i + 1);
+				int nRTCol = a_nNumCols - (i + 1);
 
 				int nRBRow = a_nNumRows - (i + 1);
-				int nRBCol = a_nNumRows - (j + 1);
+				int nRBCol = a_nNumCols - (j + 1);
 
 				// 왼쪽 방향 일 경우
 				if(a_eDirection == EDirection::LEFT) {

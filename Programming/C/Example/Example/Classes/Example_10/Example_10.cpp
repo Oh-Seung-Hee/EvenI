@@ -1,7 +1,7 @@
 #include "Example_10.h"
 
-#define E10_MALLOC
-#define E10_CALLOC
+//#define E10_MALLOC
+//#define E10_CALLOC
 #define E10_REALLOC
 
 namespace E10 {
@@ -71,6 +71,8 @@ namespace E10 {
 			if(pstNode->m_nVal == a_nVal) {
 				return i;
 			}
+
+			pstNode = pstNode->m_pstNextNode;
 		}
 
 		return -1;
@@ -103,7 +105,7 @@ namespace E10 {
 			pstNode = pstNode->m_pstNextNode;
 
 			free(pstRemoveNode);
-}
+		}
 
 		a_pstLinkedList->m_pstHeadNode = NULL;
 	}
@@ -245,7 +247,12 @@ namespace E10 {
 		STArray stArray;
 		SetupArray(&stArray, 5);
 
-		for(int i = 0; i < 20; ++i) {
+		int nSize = 0;
+
+		printf("배열 길이 입력 : ");
+		scanf("%d", &nSize);
+
+		for(int i = 0; i < nSize; ++i) {
 			AddVal(&stArray, i + 1);
 		}
 

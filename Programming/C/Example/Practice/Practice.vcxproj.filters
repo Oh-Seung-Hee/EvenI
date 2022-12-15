@@ -38,6 +38,9 @@
     <Filter Include="Classes\Practice_09 %28사용자 정의 자료형%29">
       <UniqueIdentifier>{42b241f4-31dd-47c1-a017-6fc1c8a8e166}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Practice_10 %28동적 할당%29">
+      <UniqueIdentifier>{7c04dcbc-30ce-4f49-b799-b57e404be853}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -67,6 +70,9 @@
     <ClInclude Include="Classes\Practice_09\Practice_09.h">
       <Filter>Classes\Practice_09 %28사용자 정의 자료형%29</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Practice_10\Practice_10.h">
+      <Filter>Classes\Practice_10 %28동적 할당%29</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Practice_02\Practice_02.cpp">
@@ -95,6 +101,9 @@
     </ClCompile>
     <ClCompile Include="Classes\Practice_09\Practice_09.cpp">
       <Filter>Classes\Practice_09 %28사용자 정의 자료형%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_10\Practice_10.cpp">
+      <Filter>Classes\Practice_10 %28동적 할당%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

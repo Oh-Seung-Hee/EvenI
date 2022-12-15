@@ -6,6 +6,7 @@
 #include "Practice_07/Practice_07.h"
 #include "Practice_08/Practice_08.h"
 #include "Practice_09/Practice_09.h"
+#include "Practice_10/Practice_10.h"
 
 /** 메인 함수 */
 int main(int argc, char* args[]) {
@@ -16,5 +17,6 @@ int main(int argc, char* args[]) {
 	//return P06::Practice_06(argc, args);
 	//return P07::Practice_07(argc, args);
 	//return P08::Practice_08(argc, args);
-	return P09::Practice_09(argc, args);
+	//return P09::Practice_09(argc, args);
+	return P10::Practice_10(argc, args);
 }

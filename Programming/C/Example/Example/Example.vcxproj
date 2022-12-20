@@ -141,6 +141,10 @@
     <ClInclude Include="Classes\Example_10\Example_10.h" />
     <ClInclude Include="Classes\Example_11\Example_11.h" />
     <ClInclude Include="Classes\Example_12\Example_12.h" />
+    <ClInclude Include="Classes\Example_12\Utility\E12Board.h" />
+    <ClInclude Include="Classes\Example_12\Utility\E12Snake.h" />
+    <ClInclude Include="Classes\Example_12\Utility\E12Tail.h" />
+    <ClInclude Include="Classes\Example_12\Utility\KE12Define.h" />
     <ClInclude Include="Classes\Global\Define\KGDefine.h" />
   </ItemGroup>
   <ItemGroup>
@@ -157,9 +161,16 @@
     <ClCompile Include="Classes\Example_10\Example_10.cpp" />
     <ClCompile Include="Classes\Example_11\Example_11.cpp" />
     <ClCompile Include="Classes\Example_12\Example_12.cpp" />
+    <ClCompile Include="Classes\Example_12\Utility\E12Board.cpp" />
+    <ClCompile Include="Classes\Example_12\Utility\E12Snake.cpp" />
+    <ClCompile Include="Classes\Example_12\Utility\E12Tail.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Example_11\Example_11_03.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Example_11\Example_11_01.txt" />
+    <Text Include="Resources\Example_11\Example_11_02.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

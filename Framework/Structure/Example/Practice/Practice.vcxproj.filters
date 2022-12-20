@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{f2c84df2-cf9e-43d8-9c0e-6d132fac7a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global">
+      <UniqueIdentifier>{ed34d22e-39b8-489c-b70d-095d1bd8907b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global\Define">
+      <UniqueIdentifier>{c1d9e600-2485-42f9-83fd-981aaaedc0d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Practice_01">
+      <UniqueIdentifier>{e5f0e476-d838-4e62-a858-9e14a0f256f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\Practice.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_01\Practice_01.cpp">
+      <Filter>Classes\Practice_01</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classes\Global\Define\KGDefine.h">
+      <Filter>Classes\Global\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Practice_01\Practice_01.h">
+      <Filter>Classes\Practice_01</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

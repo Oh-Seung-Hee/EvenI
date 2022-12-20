@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{ee909bde-4553-4976-a68b-35cf5ca6ca91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global">
+      <UniqueIdentifier>{48014ec7-080f-423b-bff9-a15af05c774c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global\Define">
+      <UniqueIdentifier>{9023b945-8047-4a35-989f-6b2e474a8e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_01 %28스택%29">
+      <UniqueIdentifier>{dd5a906e-db3c-491a-b8d1-5845e194c79a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_02 %28큐%29">
+      <UniqueIdentifier>{4a980bec-0edc-4aaf-b64b-ab40ead0d948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_03 %28배열 리스트%29">
+      <UniqueIdentifier>{08a4eac9-8790-4394-a5da-bfc95783aec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_04 %28연결 리스트%29">
+      <UniqueIdentifier>{d360c88f-a244-4a48-b166-c56bd9781d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_05 %28이진 탐색 트리%29">
+      <UniqueIdentifier>{3f36a81a-80ce-41f6-85fe-8753b8e692a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_06 %28우선 순위 큐%29">
+      <UniqueIdentifier>{0b9970e5-b145-46e7-89c9-d60eb0676fd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_07 %28해시%29">
+      <UniqueIdentifier>{8131250d-57bd-4955-a6d7-7300cb2fadd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_08 %28그래프%29">
+      <UniqueIdentifier>{c75f3fae-acdb-4c0c-b166-69752cbc0a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_10 %28최소 비용 신장 트리%29">
+      <UniqueIdentifier>{90e830df-be9f-49eb-b6c9-e8c71fd5f8e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_09 %28균형 이진 탐색 트리%29">
+      <UniqueIdentifier>{5a45fd82-45a1-4bc3-a0f5-083d3f2f63fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global\Utility">
+      <UniqueIdentifier>{bb50d950-10a2-49c5-be72-d3610a5adf49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global\Utility\Structure">
+      <UniqueIdentifier>{a475d081-824c-4ef0-898a-9a40e66fe754}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classes\Global\Define\KGDefine.h">
+      <Filter>Classes\Global\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_01\Example_01.h">
+      <Filter>Classes\Example_01 %28스택%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_02\Example_02.h">
+      <Filter>Classes\Example_02 %28큐%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_03\Example_03.h">
+      <Filter>Classes\Example_03 %28배열 리스트%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_04\Example_04.h">
+      <Filter>Classes\Example_04 %28연결 리스트%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_05\Example_05.h">
+      <Filter>Classes\Example_05 %28이진 탐색 트리%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_06\Example_06.h">
+      <Filter>Classes\Example_06 %28우선 순위 큐%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_07\Example_07.h">
+      <Filter>Classes\Example_07 %28해시%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_08\Example_08.h">
+      <Filter>Classes\Example_08 %28그래프%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_09\Example_09.h">
+      <Filter>Classes\Example_09 %28균형 이진 탐색 트리%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_10\Example_10.h">
+      <Filter>Classes\Example_10 %28최소 비용 신장 트리%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\Stack.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\Queue.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\ArrayList.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\LinkedList.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\Example_01\Example_01.cpp">
+      <Filter>Classes\Example_01 %28스택%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_02\Example_02.cpp">
+      <Filter>Classes\Example_02 %28큐%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_03\Example_03.cpp">
+      <Filter>Classes\Example_03 %28배열 리스트%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_04\Example_04.cpp">
+      <Filter>Classes\Example_04 %28연결 리스트%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_05\Example_05.cpp">
+      <Filter>Classes\Example_05 %28이진 탐색 트리%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_06\Example_06.cpp">
+      <Filter>Classes\Example_06 %28우선 순위 큐%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_07\Example_07.cpp">
+      <Filter>Classes\Example_07 %28해시%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_08\Example_08.cpp">
+      <Filter>Classes\Example_08 %28그래프%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_09\Example_09.cpp">
+      <Filter>Classes\Example_09 %28균형 이진 탐색 트리%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_10\Example_10.cpp">
+      <Filter>Classes\Example_10 %28최소 비용 신장 트리%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\Stack.cpp">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\Queue.cpp">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\ArrayList.cpp">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\LinkedList.cpp">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

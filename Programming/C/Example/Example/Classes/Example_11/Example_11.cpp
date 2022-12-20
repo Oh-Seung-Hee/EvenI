@@ -4,6 +4,7 @@
 #define E11_FILE_SYS_02
 #define E11_FILE_SYS_03
 #define E11_FILE_SYS_04
+#define E11_FILE_SYS_05
 
 namespace E11 {
 #if defined E11_FILE_SYS_01
@@ -13,6 +14,8 @@ namespace E11 {
 #elif defined E11_FILE_SYS_03
 
 #elif defined E11_FILE_SYS_04
+
+#elif defined E11_FILE_SYS_05
 	/** 텍스트 파일을 복사한다 */
 	void CopyTextFile(char a_pszSrcPath[], char a_pszDestPath[]) {
 		FILE* pfRStream = fopen(a_pszSrcPath, "rt");
@@ -133,6 +136,23 @@ namespace E11 {
 			fclose(pfRStream);
 		}
 #elif defined E11_FILE_SYS_04
+		// 매개 변수가 유효 할 경우
+		if(argc > 2) {
+			FILE* pfRStream = fopen(args[1], "rb");
+
+			// 파일이 존재 할 경우
+			if(pfRStream != NULL) {
+				fseek(pfRStream, SEEK_END, 0);
+				printf("파일 크기 : %d bytes\n", ftell(pfRStream));
+
+				fclose(pfRStream);
+			} else {
+				printf("%s 파일이 존재하지 않습니다.\n", args[1]);
+			}
+		} else {
+			printf("[실행 파일 경로] [파일 경로] 형식으로 입력해주세요.\n");
+		}
+#elif defined E11_FILE_SYS_05
 		// 매개 변수가 유효 할 경우
 		if(argc > 3) {
 			// 텍스트 모드 일 경우

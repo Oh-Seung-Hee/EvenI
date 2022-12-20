@@ -15,6 +15,9 @@
 * - calloc
 * - realloc
 * 
+* C 동적 할당 제거하는 방법
+* - free
+* 
 * Ex)
 * int* pnValp1 = (int*)malloc(sizeof(int));
 * int* pnVal02 = (int*)calloc(1, sizeof(int));

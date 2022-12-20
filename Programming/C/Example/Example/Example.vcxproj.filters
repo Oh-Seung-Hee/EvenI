@@ -53,6 +53,9 @@
     <Filter Include="리소스 파일\Example_11">
       <UniqueIdentifier>{16036abd-fef6-41f5-a044-32df7738eb32}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Example_12 %28모듈화 프로그래밍%29\Utility">
+      <UniqueIdentifier>{b67a5b56-f4d2-45a7-a1a1-d2ad491cb9d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -93,6 +96,18 @@
     </ClInclude>
     <ClInclude Include="Classes\Example_12\Example_12.h">
       <Filter>Classes\Example_12 %28모듈화 프로그래밍%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_12\Utility\E12Board.h">
+      <Filter>Classes\Example_12 %28모듈화 프로그래밍%29\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_12\Utility\KE12Define.h">
+      <Filter>Classes\Example_12 %28모듈화 프로그래밍%29\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_12\Utility\E12Snake.h">
+      <Filter>Classes\Example_12 %28모듈화 프로그래밍%29\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_12\Utility\E12Tail.h">
+      <Filter>Classes\Example_12 %28모듈화 프로그래밍%29\Utility</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -135,10 +150,27 @@
     <ClCompile Include="Classes\Example_12\Example_12.cpp">
       <Filter>Classes\Example_12 %28모듈화 프로그래밍%29</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Example_12\Utility\E12Board.cpp">
+      <Filter>Classes\Example_12 %28모듈화 프로그래밍%29\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_12\Utility\E12Snake.cpp">
+      <Filter>Classes\Example_12 %28모듈화 프로그래밍%29\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_12\Utility\E12Tail.cpp">
+      <Filter>Classes\Example_12 %28모듈화 프로그래밍%29\Utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Example_11\Example_11_03.bin">
       <Filter>리소스 파일\Example_11</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Example_11\Example_11_01.txt">
+      <Filter>리소스 파일\Example_11</Filter>
+    </Text>
+    <Text Include="Resources\Example_11\Example_11_02.txt">
+      <Filter>리소스 파일\Example_11</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -31,7 +31,7 @@ namespace E12 {
 				SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), stCursorPos);
 
 				// 이동이 가능 할 경우
-				if(fDeltaTime >= 0.1f) {
+				if(fDeltaTime >= 0.25f) {
 					fPrevTime = fTime;
 					E12MoveSnake(&stSnake);
 				}

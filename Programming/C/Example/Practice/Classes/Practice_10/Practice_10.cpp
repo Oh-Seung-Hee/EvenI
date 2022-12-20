@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define P10_01
-#define P10_02
+//#define P10_01
+//#define P10_02
 #define P10_03
 
 namespace P10 {
@@ -181,6 +181,12 @@ namespace P10 {
 			printf("\n");
 		}
 
+		/*
+		* Note.
+		* 기본적으로 free 함수 호출 횟수는 동적 할당 횟수만큼 해야합니다.
+		* 현재 snail 은 포인터 배열을 의미하는 더블 포인터이고, 해당 포인터를 기반으로 다시 각 행마다 동적 할당을 했기 때문에
+		* free 함수 또한 각 행마다 별도로 호출해서 메모리를 정리해 줄 필요가 있습니다.
+		*/
 		free(snail);
 
 #endif // #if defined P10_01

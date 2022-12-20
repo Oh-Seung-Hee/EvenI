@@ -41,6 +41,9 @@
     <Filter Include="Classes\Practice_10 %28동적 할당%29">
       <UniqueIdentifier>{7c04dcbc-30ce-4f49-b799-b57e404be853}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Practice_11 %28파일 시스템%29">
+      <UniqueIdentifier>{9d4b7fde-d610-48e6-a77e-a4e2d9e5b2c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -73,6 +76,9 @@
     <ClInclude Include="Classes\Practice_10\Practice_10.h">
       <Filter>Classes\Practice_10 %28동적 할당%29</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Practice_11\Practice_11.h">
+      <Filter>Classes\Practice_11 %28파일 시스템%29</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Practice_02\Practice_02.cpp">
@@ -104,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="Classes\Practice_10\Practice_10.cpp">
       <Filter>Classes\Practice_10 %28동적 할당%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_11\Practice_11.cpp">
+      <Filter>Classes\Practice_11 %28파일 시스템%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

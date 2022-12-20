@@ -135,7 +135,7 @@ namespace S06 {
 		int nNumCols = 0;
 
 		printf("너비, 높이 입력 : ");
-		scanf("%d %d", &nNumRows, &nNumCols);
+		scanf("%d %d", &nNumCols, &nNumRows);
 
 		SetupBoard(anVals, nNumRows, nNumCols);
 

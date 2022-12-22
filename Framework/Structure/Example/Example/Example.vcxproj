@@ -31,6 +31,7 @@
     <ClInclude Include="Classes\Example_10\Example_10.h" />
     <ClInclude Include="Classes\Global\Define\KGDefine.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\ArrayList.h" />
+    <ClInclude Include="Classes\Global\Utility\Structure\BSearchTree.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\LinkedList.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\Queue.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\Stack.h" />
@@ -48,6 +49,7 @@
     <ClCompile Include="Classes\Example_09\Example_09.cpp" />
     <ClCompile Include="Classes\Example_10\Example_10.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\ArrayList.cpp" />
+    <ClCompile Include="Classes\Global\Utility\Structure\BSearchTree.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\LinkedList.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\Queue.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\Stack.cpp" />

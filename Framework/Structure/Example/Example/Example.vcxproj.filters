@@ -97,6 +97,9 @@
     <ClInclude Include="Classes\Global\Utility\Structure\LinkedList.h">
       <Filter>Classes\Global\Utility\Structure</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\BSearchTree.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Example_01\Example_01.cpp">
@@ -142,6 +145,9 @@
       <Filter>Classes\Global\Utility\Structure</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Global\Utility\Structure\LinkedList.cpp">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\BSearchTree.cpp">
       <Filter>Classes\Global\Utility\Structure</Filter>
     </ClCompile>
   </ItemGroup>

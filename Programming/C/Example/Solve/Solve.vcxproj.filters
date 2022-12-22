@@ -41,6 +41,9 @@
     <Filter Include="Classes\Solve_10 %28동적 할당%29">
       <UniqueIdentifier>{74ab5770-b9d9-442f-9d31-95031eafd315}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Solve_11 %28파일 시스템%29">
+      <UniqueIdentifier>{580974d1-6427-444e-a053-e0cd42f1aa58}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Solve.cpp">
@@ -73,6 +76,9 @@
     <ClCompile Include="Classes\Solve_10\Solve_10.cpp">
       <Filter>Classes\Solve_10 %28동적 할당%29</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Solve_11\Solve_11.cpp">
+      <Filter>Classes\Solve_11 %28파일 시스템%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -104,6 +110,9 @@
     </ClInclude>
     <ClInclude Include="Classes\Solve_10\Solve_10.h">
       <Filter>Classes\Solve_10 %28동적 할당%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Solve_11\Solve_11.h">
+      <Filter>Classes\Solve_11 %28파일 시스템%29</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -16,6 +16,11 @@ namespace Global {
         return a_pstQueue->m_nNumVals <= 0;
     }
 
+    void* QPeek(STQueue* a_pstQueue) {
+        assert(!QIsEmpty(a_pstQueue));
+        return a_pstQueue->m_pvVals[a_pstQueue->m_nFront];
+    }
+
     void QEnqueue(STQueue* a_pstQueue, void* a_pvVal) {
         // 큐가 가득 찼을 경우
         if(a_pstQueue->m_nNumVals >= a_pstQueue->m_nSize) {

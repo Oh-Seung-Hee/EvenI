@@ -16,6 +16,11 @@ namespace Global {
 		return a_pstStack->m_nNumVals <= 0;
 	}
 
+	void* SPeek(STStack* a_pstStack) {
+		assert(!SIsEmpty(a_pstStack));
+		return a_pstStack->m_pvVals[a_pstStack->m_nNumVals - 1];
+	}
+
 	void SPush(STStack* a_pstStack, void* a_pvVal) {
 		// 스택이 가득 찼을 경우
 		if(a_pstStack->m_nNumVals >= a_pstStack->m_nSize) {

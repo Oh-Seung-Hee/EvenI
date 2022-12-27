@@ -20,6 +20,9 @@ namespace Global {
 	/** 빈 스택 여부를 검사한다 */
 	bool SIsEmpty(STStack* a_pstStack);
 
+	/** 값을 반환한다 */
+	void* SPeek(STStack* a_pstStack);
+
 	/** 값을 추가한다 */
 	void SPush(STStack* a_pstStack, void* a_pvVal);
 

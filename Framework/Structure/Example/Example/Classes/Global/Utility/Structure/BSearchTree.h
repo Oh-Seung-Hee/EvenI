@@ -3,8 +3,8 @@
 #include "../../Define/KGDefine.h"
 
 namespace Global {
-	/** 이진 트리 순서 */
-	enum class EBTOrder {
+	/** 이진 탐색 트리 순서 */
+	enum class EBSTOrder {
 		NONE = -1,
 		PRE,
 		IN,
@@ -34,5 +34,5 @@ namespace Global {
 	void BSTDestroy(STBSearchTree* a_pstBSearchTree);
 
 	/** 순회한다 */
-	void BSTEnumerate(STBSearchTree* a_pstBSearchTree, EBTOrder a_eOrder, void(*a_pfnCallback)(STBTNode*));
+	void BSTEnumerate(STBSearchTree* a_pstBSearchTree, EBSTOrder a_eOrder, void(*a_pfnCallback)(STBTNode*));
 }

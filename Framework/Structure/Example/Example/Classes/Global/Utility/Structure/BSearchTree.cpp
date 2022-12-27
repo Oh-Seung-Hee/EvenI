@@ -63,17 +63,17 @@ namespace Global {
 	}
 
 	void BSTDestroy(STBSearchTree* a_pstBSearchTree) {
-		BSTEnumerate(a_pstBSearchTree, EBTOrder::POST, [](STBTNode* a_pstNode) -> void {
+		BSTEnumerate(a_pstBSearchTree, EBSTOrder::POST, [](STBTNode* a_pstNode) -> void {
 			SAFE_FREE(a_pstNode);
 		});
 	}
 
-	void BSTEnumerate(STBSearchTree* a_pstBSearchTree, EBTOrder a_eOrder, void(*a_pfnCallback)(STBTNode*)) {
+	void BSTEnumerate(STBSearchTree* a_pstBSearchTree, EBSTOrder a_eOrder, void(*a_pfnCallback)(STBTNode*)) {
 		switch(a_eOrder) {
-			case EBTOrder::PRE: BSTPreEnumerate(a_pstBSearchTree->m_pstRootNode, a_pfnCallback); break;
-			case EBTOrder::IN: BSTInEnumerate(a_pstBSearchTree->m_pstRootNode, a_pfnCallback); break;
-			case EBTOrder::POST: BSTPostEnumerate(a_pstBSearchTree->m_pstRootNode, a_pfnCallback); break;
-			case EBTOrder::LEVEL: BSTLevelEnumerate(a_pstBSearchTree->m_pstRootNode, a_pfnCallback); break;
+			case EBSTOrder::PRE: BSTPreEnumerate(a_pstBSearchTree->m_pstRootNode, a_pfnCallback); break;
+			case EBSTOrder::IN: BSTInEnumerate(a_pstBSearchTree->m_pstRootNode, a_pfnCallback); break;
+			case EBSTOrder::POST: BSTPostEnumerate(a_pstBSearchTree->m_pstRootNode, a_pfnCallback); break;
+			case EBSTOrder::LEVEL: BSTLevelEnumerate(a_pstBSearchTree->m_pstRootNode, a_pfnCallback); break;
 		}
 	}
 }

@@ -26,6 +26,8 @@
  */
 /** 메인 함수 */
 int main(int argc, char* args[]) {
+	srand((unsigned int)time(NULL));
+
 	return E01::Example_01(argc, args);
 	//return E02::Example_02(argc, args);
 	//return E03::Example_03(argc, args);

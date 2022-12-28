@@ -11,3 +11,14 @@
 
 // 메모리 관리
 #define SAFE_FREE(TARGET)			if((TARGET) != NULL) { free((TARGET)); (TARGET) = NULL; }
+
+namespace Global {
+	/** 이진 트리 노드 */
+	struct STBTNode {
+		void* m_pvKey;
+		void* m_pvVal;
+
+		STBTNode* m_pstLChildNode;
+		STBTNode* m_pstRChildNode;
+	};
+}

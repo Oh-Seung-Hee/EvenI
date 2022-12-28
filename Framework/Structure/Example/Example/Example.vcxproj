@@ -30,6 +30,7 @@
     <ClInclude Include="Classes\Example_09\Example_09.h" />
     <ClInclude Include="Classes\Example_10\Example_10.h" />
     <ClInclude Include="Classes\Global\Define\KGDefine.h" />
+    <ClInclude Include="Classes\Global\Function\GFunc.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\ArrayList.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\BSearchTree.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\LinkedList.h" />
@@ -48,6 +49,7 @@
     <ClCompile Include="Classes\Example_08\Example_08.cpp" />
     <ClCompile Include="Classes\Example_09\Example_09.cpp" />
     <ClCompile Include="Classes\Example_10\Example_10.cpp" />
+    <ClCompile Include="Classes\Global\Function\GFunc.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\ArrayList.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\BSearchTree.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\LinkedList.cpp" />
@@ -67,6 +69,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>

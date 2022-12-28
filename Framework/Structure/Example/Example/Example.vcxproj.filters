@@ -50,6 +50,9 @@
     <Filter Include="Classes\Global\Utility\Structure">
       <UniqueIdentifier>{a475d081-824c-4ef0-898a-9a40e66fe754}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Global\Function">
+      <UniqueIdentifier>{7b9c8435-adfc-4e07-8311-b9fc6b6faff8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -100,6 +103,9 @@
     <ClInclude Include="Classes\Global\Utility\Structure\BSearchTree.h">
       <Filter>Classes\Global\Utility\Structure</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Global\Function\GFunc.h">
+      <Filter>Classes\Global\Function</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Example_01\Example_01.cpp">
@@ -149,6 +155,9 @@
     </ClCompile>
     <ClCompile Include="Classes\Global\Utility\Structure\BSearchTree.cpp">
       <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Function\GFunc.cpp">
+      <Filter>Classes\Global\Function</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

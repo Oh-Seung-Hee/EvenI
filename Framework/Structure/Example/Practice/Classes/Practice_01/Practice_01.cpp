@@ -100,6 +100,11 @@ namespace P01 {
 		init();
 
 		for(int i = 0; i < STACKSIZE; i++) {
+			// 공백 일 경우
+			if(isspace(formula[i])) {
+				continue;
+			}
+
 			// ( 연산자인 경우
 			if(formula[i] == '(') {
 				push(formula[i]);
@@ -165,7 +170,10 @@ namespace P01 {
 		char answer[STACKSIZE] = "";
 
 		printf("수식 입력 : ");
-		scanf("%s", formula);
+		//scanf("%s", formula);
+
+		fgets(formula, sizeof(formula), stdin);
+		formula[strlen(formula) - 1] = '\0';
 
 		postfix(formula, answer);
 

@@ -1,10 +1,7 @@
 #include "Solve_02.h"
 
-#define S02_01
-
 namespace S02 {
 	int Solve_02(int argc, char* args[]) {
-#if defined S02_01
 		int nVal01 = 0;
 		int nVal02 = 0;
 
@@ -20,7 +17,6 @@ namespace S02 {
 
 		printf("\n=====> 교환 후 <=====\n");
 		printf("%d, %d\n", nVal01, nVal02);
-#endif // #if defined S02_01
 
 		return 0;
 	}

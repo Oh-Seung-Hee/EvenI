@@ -1,7 +1,7 @@
-#include "Example_02.h"
-
 //#define E02_VAR
 #define E02_CONST
+
+#include "Example_02.h"
 
 namespace E02 {
 	int Example_02(int argc, char* args[]) {

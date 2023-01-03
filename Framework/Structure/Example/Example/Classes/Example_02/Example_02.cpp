@@ -8,11 +8,14 @@ namespace E02 {
 		Global::STQueue stQueue;
 		Global::QInit(&stQueue);
 
+		printf("=====> 큐 입력 순서 <=====\n");
+
 		for(int i = 0; i < MAX_NUM_VALS; ++i) {
+			printf("%d, ", i + 1);
 			Global::QEnqueue(&stQueue, (void*)(i + 1));
 		}
 
-		printf("=====> 큐 요소 <=====\n");
+		printf("\n\n=====> 큐 출력 순서 <=====\n");
 
 		while(!Global::QIsEmpty(&stQueue)) {
 			printf("%d, ", (int)Global::QDequeue(&stQueue));

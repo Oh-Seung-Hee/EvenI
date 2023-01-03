@@ -1,9 +1,9 @@
-#include "Practice_05.h"
-
 //#define P05_01
 //#define P05_02
 //#define P05_03
 #define P05_04
+
+#include "Practice_05.h"
 
 namespace P05 {
 	int Practice_05(int argc, char* args[]) {

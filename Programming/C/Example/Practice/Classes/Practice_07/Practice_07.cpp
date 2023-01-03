@@ -1,10 +1,10 @@
-#include "Practice_07.h"
-#include <stdlib.h>
-#include <time.h>
-
 #define P07_01
 #define P07_02
 #define P07_03
+
+#include "Practice_07.h"
+#include <stdlib.h>
+#include <time.h>
 
 namespace P07 {
 #if defined P07_01

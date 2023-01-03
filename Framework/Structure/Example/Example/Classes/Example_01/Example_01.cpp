@@ -8,11 +8,14 @@ namespace E01 {
 		Global::STStack stStack;
 		Global::SInit(&stStack);
 
+		printf("=====> 스택 입력 순서 <=====\n");
+
 		for(int i = 0; i < MAX_NUM_VALS; ++i) {
+			printf("%d, ", i + 1);
 			Global::SPush(&stStack, (void*)(i + 1));
 		}
 
-		printf("=====> 스택 요소 <=====\n");
+		printf("\n\n=====> 스택 출력 순서 <=====\n");
 
 		while(!Global::SIsEmpty(&stStack)) {
 			printf("%d, ", (int)Global::SPop(&stStack));

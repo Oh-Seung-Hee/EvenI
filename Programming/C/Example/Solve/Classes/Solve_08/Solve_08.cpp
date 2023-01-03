@@ -1,8 +1,8 @@
-#include "Solve_08.h"
-
 //#define S08_01
 //#define S08_02
 #define S08_03
+
+#include "Solve_08.h"
 
 namespace S08 {
 #if defined S08_01

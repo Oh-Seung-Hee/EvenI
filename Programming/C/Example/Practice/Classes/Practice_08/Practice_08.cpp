@@ -1,10 +1,10 @@
-#include "Practice_08.h"
-#include <stdlib.h>
-#include <time.h>
-
 //#define P08_01
 //#define P08_02
 #define P08_03
+
+#include "Practice_08.h"
+#include <stdlib.h>
+#include <time.h>
 
 namespace P08 {
 #if defined P08_01

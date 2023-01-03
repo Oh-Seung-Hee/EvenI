@@ -1,5 +1,3 @@
-#include "Example_08.h"
-
 //#define E08_PTR_01
 //#define E08_PTR_02
 //#define E08_PTR_03
@@ -8,6 +6,8 @@
 //#define E08_PTR_06
 //#define E08_PTR_07
 #define E08_PTR_08
+
+#include "Example_08.h"
 
 namespace E08 {
 #if defined E08_PTR_01

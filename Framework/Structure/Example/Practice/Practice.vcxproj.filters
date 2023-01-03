@@ -14,7 +14,7 @@
     <Filter Include="Classes\Global\Define">
       <UniqueIdentifier>{c1d9e600-2485-42f9-83fd-981aaaedc0d1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Practice_01">
+    <Filter Include="Classes\Practice_01 %28스택%29">
       <UniqueIdentifier>{e5f0e476-d838-4e62-a858-9e14a0f256f0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -23,7 +23,7 @@
       <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Practice_01\Practice_01.cpp">
-      <Filter>Classes\Practice_01</Filter>
+      <Filter>Classes\Practice_01 %28스택%29</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -31,7 +31,7 @@
       <Filter>Classes\Global\Define</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Practice_01\Practice_01.h">
-      <Filter>Classes\Practice_01</Filter>
+      <Filter>Classes\Practice_01 %28스택%29</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

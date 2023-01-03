@@ -1,7 +1,7 @@
-#include "Solve_04.h"
-
 //#define P04_01
 #define P04_02
+
+#include "Solve_04.h"
 
 namespace S04 {
 	int Solve_04(int argc, char* args[]) {

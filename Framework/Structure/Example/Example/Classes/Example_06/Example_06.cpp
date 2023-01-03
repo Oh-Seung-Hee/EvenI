@@ -4,20 +4,30 @@
 #define MAX_NUM_VALS			(15)
 
 namespace E06 {
-	/** 값을 비교한다 */
-	int CompareVal(void* a_pvVal01, void* a_pvVal02) {
+	/** 오른 차순으로 비교한다 */
+	int CompareByAscending(void* a_pvVal01, void* a_pvVal02) {
 		return (int)a_pvVal01 - (int)a_pvVal02;
+	}
+
+	/** 내림 차순으로 비교한다 */
+	int CompareByDescending(void* a_pvVal01, void* a_pvVal02) {
+		return (int)a_pvVal02 - (int)a_pvVal01;
 	}
 
 	int Example_06(int argc, char* args[]) {
 		Global::STPQueue stPQueue;
-		Global::PQInit(&stPQueue, CompareVal);
+		Global::PQInit(&stPQueue, CompareByAscending);
+
+		printf("=====> 우선 순위 큐 입력 순서 <=====\n");
 
 		for(int i = 0; i < MAX_NUM_VALS; ++i) {
-			Global::PQEnqueue(&stPQueue, (void*)(rand() % 100));
+			int nVal = rand() % 100;
+			printf("%d, ", nVal);
+
+			Global::PQEnqueue(&stPQueue, (void*)nVal);
 		}
 
-		printf("=====> 우선 순위 큐 요소 <=====\n");
+		printf("\n\n=====> 우선 순위 큐 출력 순서 <=====\n");
 
 		while(!Global::PQIsEmpty(&stPQueue)) {
 			printf("%d, ", (int)Global::PQDequeue(&stPQueue));

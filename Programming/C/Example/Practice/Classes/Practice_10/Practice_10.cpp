@@ -1,10 +1,10 @@
-#include "Practice_10.h"
-#include <stdlib.h>
-#include <string.h>
-
 //#define P10_01
 //#define P10_02
 #define P10_03
+
+#include "Practice_10.h"
+#include <stdlib.h>
+#include <string.h>
 
 namespace P10 {
 #if defined P10_01

@@ -1,8 +1,8 @@
-#include "Example_05.h"
-
 //#define E05_LOOP_WHILE
 //#define E05_LOOP_FOR
 #define E05_LOOP_DO_WHILE
+
+#include "Example_05.h"
 
 namespace E05 {
 	int Example_05(int argc, char* args[]) {

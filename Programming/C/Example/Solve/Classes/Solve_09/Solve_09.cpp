@@ -1,8 +1,8 @@
-#include "Solve_09.h"
-
 //#define S09_01
 //#define S09_02
 #define S09_03
+
+#include "Solve_09.h"
 
 namespace S09 {
 #if defined S09_01

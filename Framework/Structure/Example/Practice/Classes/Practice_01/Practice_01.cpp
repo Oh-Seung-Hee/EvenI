@@ -1,7 +1,7 @@
-#include "Practice_01.h"
-
-#define P01_01
+//#define P01_01
 #define P01_02
+
+#include "Practice_01.h"
 
 namespace P01 {
 #if defined P01_01

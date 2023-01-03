@@ -20,7 +20,7 @@
     <Filter Include="Classes\Global\Utility\Structure">
       <UniqueIdentifier>{47610e68-6d22-4e77-aab7-085703d9ff10}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Solve_01">
+    <Filter Include="Classes\Solve_01 %28스택%29">
       <UniqueIdentifier>{fa9641a2-a8f0-422b-8234-e47ee7b92aa4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -29,7 +29,7 @@
       <Filter>Classes\Global\Define</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Solve_01\Solve_01.h">
-      <Filter>Classes\Solve_01</Filter>
+      <Filter>Classes\Solve_01 %28스택%29</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Global\Utility\Structure\Stack.h">
       <Filter>Classes\Global\Utility\Structure</Filter>
@@ -40,7 +40,7 @@
       <Filter>Classes</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Solve_01\Solve_01.cpp">
-      <Filter>Classes\Solve_01</Filter>
+      <Filter>Classes\Solve_01 %28스택%29</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Global\Utility\Structure\Stack.cpp">
       <Filter>Classes\Global\Utility\Structure</Filter>

@@ -1,7 +1,7 @@
-#include "Practice_04.h"
-
 #define P04_01
 #define P04_02
+
+#include "Practice_04.h"
 
 namespace P04 {
 	int Practice_04(int argc, char* args[]) {

@@ -1,7 +1,7 @@
-#include "Example_06.h"
-
 //#define E06_SINGLE
 #define E06_MULTI
+
+#include "Example_06.h"
 
 namespace E06 {
 	int Example_06(int argc, char* args[]) {

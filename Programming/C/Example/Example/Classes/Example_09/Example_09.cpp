@@ -1,8 +1,8 @@
-#include "Example_09.h"
-
 //#define E09_STRUCT
 //#define E09_UNION
 #define E09_ENUM
+
+#include "Example_09.h"
 
 namespace E09 {
 #if defined E09_STRUCT

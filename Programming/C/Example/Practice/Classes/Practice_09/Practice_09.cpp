@@ -1,8 +1,8 @@
-#include "Practice_09.h"
-
 //#define P09_01
 #define P09_02
 #define P09_03
+
+#include "Practice_09.h"
 
 namespace P09 {
 #if defined P09_01

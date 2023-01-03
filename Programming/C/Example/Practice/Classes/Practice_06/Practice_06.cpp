@@ -1,10 +1,10 @@
-#include "Practice_06.h"
-#include <stdlib.h>
-#include <time.h>
-
 #define P06_01
 #define P06_02
 #define P06_03
+
+#include "Practice_06.h"
+#include <stdlib.h>
+#include <time.h>
 
 namespace P06 {
 	int Practice_06(int argc, char* args[]) {

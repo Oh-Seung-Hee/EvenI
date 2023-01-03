@@ -1,8 +1,8 @@
-#include "Example_10.h"
-
 #define E10_MALLOC
 #define E10_CALLOC
 #define E10_REALLOC
+
+#include "Example_10.h"
 
 namespace E10 {
 #if defined E10_MALLOC

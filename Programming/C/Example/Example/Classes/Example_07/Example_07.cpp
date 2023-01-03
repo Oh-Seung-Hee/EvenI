@@ -1,9 +1,9 @@
-#include "Example_07.h"
-
 //#define E07_FUNC_01
 //#define E07_FUNC_02
 //#define E07_FUNC_03
 #define E07_FUNC_04
+
+#include "Example_07.h"
 
 /*
  * 정적 전역 변수는 해당 변수에 접근 가능한 범위를 해당 변수가 선언 된 파일 내부로 제한하는 특징이 존재한다. (따라서, 정적 전역

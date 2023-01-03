@@ -1,8 +1,8 @@
-#include "Solve_06.h"
-
 //#define S06_01
 //#define S06_02
 #define S06_03
+
+#include "Solve_06.h"
 
 namespace S06 {
 #if defined S06_01

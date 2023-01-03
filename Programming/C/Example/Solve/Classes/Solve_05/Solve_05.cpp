@@ -1,9 +1,9 @@
-#include "Solve_05.h"
-
 //#define S05_01
 //#define S05_02
 //#define S05_03
 #define S05_04
+
+#include "Solve_05.h"
 
 namespace S05 {
 	int Solve_05(int argc, char* args[]) {

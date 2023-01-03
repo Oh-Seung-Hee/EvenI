@@ -6,25 +6,23 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Classes">
-      <UniqueIdentifier>{52a714cb-8736-4dfd-b60f-e224e12e59aa}</UniqueIdentifier>
+      <UniqueIdentifier>{fbe2939d-c9e8-421f-90af-ca893c42deaf}</UniqueIdentifier>
     </Filter>
     <Filter Include="Classes\Global">
-      <UniqueIdentifier>{ae4f30aa-4be6-433f-b0b9-562447324e35}</UniqueIdentifier>
+      <UniqueIdentifier>{31a3fe98-2fb3-47c3-a4fd-1f104d702198}</UniqueIdentifier>
     </Filter>
     <Filter Include="Classes\Global\Define">
-      <UniqueIdentifier>{14444adc-47be-4ed6-806f-5be1639e1c27}</UniqueIdentifier>
+      <UniqueIdentifier>{ed6ff5d7-d2ec-446c-bd6d-24d82aab995d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global\Utility">
+      <UniqueIdentifier>{36a92001-20f4-4897-81ba-e1a9a9c72e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global\Utility\Structure">
+      <UniqueIdentifier>{47610e68-6d22-4e77-aab7-085703d9ff10}</UniqueIdentifier>
     </Filter>
     <Filter Include="Classes\Solve_01">
-      <UniqueIdentifier>{5166c0b7-e5bf-4e18-b710-c20ab3c9f85b}</UniqueIdentifier>
+      <UniqueIdentifier>{fa9641a2-a8f0-422b-8234-e47ee7b92aa4}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Classes\Solve.cpp">
-      <Filter>Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Solve_01\Solve_01.cpp">
-      <Filter>Classes\Solve_01</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -33,5 +31,19 @@
     <ClInclude Include="Classes\Solve_01\Solve_01.h">
       <Filter>Classes\Solve_01</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\Stack.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\Solve.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Solve_01\Solve_01.cpp">
+      <Filter>Classes\Solve_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\Stack.cpp">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

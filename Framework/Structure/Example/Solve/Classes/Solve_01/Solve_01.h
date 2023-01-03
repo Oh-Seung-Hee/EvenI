@@ -4,5 +4,5 @@
 
 namespace S01 {
 	/** Solve 1 */
-	int Solve_01(int argc, char* args[]);
+	int Solve_01(int argc, char** args);
 }

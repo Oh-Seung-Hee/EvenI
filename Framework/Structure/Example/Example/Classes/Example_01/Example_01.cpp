@@ -1,7 +1,7 @@
 #include "Example_01.h"
 #include "../Global/Utility/Structure/Stack.h"
 
-#define MAX_NUM_VALS			(20)
+#define MAX_NUM_VALS			(15)
 
 namespace E01 {
 	int Example_01(int argc, char* args[]) {

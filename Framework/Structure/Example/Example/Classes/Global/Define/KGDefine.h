@@ -14,11 +14,13 @@
 
 namespace Global {
 	/** 이진 트리 노드 */
-	struct STBTNode {
+	struct STBTreeNode {
 		void* m_pvKey;
 		void* m_pvVal;
 
-		STBTNode* m_pstLChildNode;
-		STBTNode* m_pstRChildNode;
+		STBTreeNode* m_pstLChildNode;
+		STBTreeNode* m_pstRChildNode;
 	};
+
+	typedef int(*COMPARE_FUNC)(void*, void*);
 }

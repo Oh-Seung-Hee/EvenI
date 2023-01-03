@@ -1,12 +1,17 @@
 #include "Example_03.h"
 #include "../Global/Utility/Structure/ArrayList.h"
 
-#define MAX_NUM_VALS			(20)
+#define MAX_NUM_VALS			(15)
 
 namespace E03 {
+	/** 값을 비교한다 */
+	int CompareVal(void* a_pvVal01, void* a_pvVal02) {
+		return (int)a_pvVal01 - (int)a_pvVal02;
+	}
+
 	int Example_03(int argc, char* args[]) {
 		Global::STArrayList stArrayList;
-		Global::ALInit(&stArrayList);
+		Global::ALInit(&stArrayList, CompareVal);
 
 		for(int i = 0; i < MAX_NUM_VALS; ++i) {
 			Global::ALAddVal(&stArrayList, (void*)(i + 1));

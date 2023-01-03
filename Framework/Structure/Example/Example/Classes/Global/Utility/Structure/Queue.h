@@ -19,7 +19,7 @@ namespace Global {
 	/** 제거한다 */
 	void QDestroy(STQueue* a_pstQueue);
 
-	/** 빈 스택 여부를 검사한다 */
+	/** 비어있는지 검사한다 */
 	bool QIsEmpty(STQueue* a_pstQueue);
 
 	/** 값을 반환한다 */

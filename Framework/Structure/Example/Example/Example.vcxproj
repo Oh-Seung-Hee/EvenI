@@ -33,6 +33,8 @@
     <ClInclude Include="Classes\Global\Function\GFunc.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\ArrayList.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\BSearchTree.h" />
+    <ClInclude Include="Classes\Global\Utility\Structure\Hash.h" />
+    <ClInclude Include="Classes\Global\Utility\Structure\PQueue.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\LinkedList.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\Queue.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\Stack.h" />
@@ -52,6 +54,8 @@
     <ClCompile Include="Classes\Global\Function\GFunc.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\ArrayList.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\BSearchTree.cpp" />
+    <ClCompile Include="Classes\Global\Utility\Structure\Hash.cpp" />
+    <ClCompile Include="Classes\Global\Utility\Structure\PQueue.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\LinkedList.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\Queue.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\Stack.cpp" />

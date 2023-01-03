@@ -1,7 +1,7 @@
 #include "Example_02.h"
 #include "../Global/Utility/Structure/Queue.h"
 
-#define MAX_NUM_VALS			(20)
+#define MAX_NUM_VALS			(15)
 
 namespace E02 {
 	int Example_02(int argc, char* args[]) {

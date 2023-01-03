@@ -32,8 +32,9 @@ namespace Global {
 		SAFE_FREE(pstRemoveNode);
 	}
 
-	void LLInit(STLinkedList* a_pstLinkedList) {
+	void LLInit(STLinkedList* a_pstLinkedList, COMPARE_FUNC a_pfnCompare) {
 		memset(a_pstLinkedList, 0, sizeof(STLinkedList));
+		a_pstLinkedList->m_pfnCompare = a_pfnCompare;
 
 		a_pstLinkedList->m_pstHeadNode = LLCreateNode(NULL);
 		a_pstLinkedList->m_pstTailNode = LLCreateNode(NULL);
@@ -51,6 +52,10 @@ namespace Global {
 
 			SAFE_FREE(pstRemoveNode);
 		}
+	}
+
+	bool LLIsEmpty(STLinkedList* a_pstLinkedList) {
+		return a_pstLinkedList->m_nNumVals <= 0;
 	}
 
 	bool LLIsValidIdx(STLinkedList* a_pstLinkedList, int a_nIdx) {
@@ -77,7 +82,7 @@ namespace Global {
 
 		for(int i = 0; i < a_pstLinkedList->m_nNumVals; ++i) {
 			// 값이 존재 할 경우
-			if(pstNode->m_pstNextNode->m_pvVal == a_pvVal) {
+			if(a_pstLinkedList->m_pfnCompare(pstNode->m_pstNextNode->m_pvVal, a_pvVal) == 0) {
 				return i;
 			}
 

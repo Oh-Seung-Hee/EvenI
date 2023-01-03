@@ -12,19 +12,24 @@ namespace Global {
 		SAFE_FREE(a_pstArrayList->m_pvVals);
 
 		a_pstArrayList->m_nSize = a_nSize;
-		a_pstArrayList->m_nNumVals = (a_pstArrayList->m_nSize < a_pstArrayList->m_nNumVals) ? a_pstArrayList->m_nSize : a_pstArrayList->m_nNumVals;
+		a_pstArrayList->m_nNumVals = (a_nSize < a_pstArrayList->m_nNumVals) ? a_nSize : a_pstArrayList->m_nNumVals;
 		a_pstArrayList->m_pvVals = pvVals;
 	}
 
-	void ALInit(STArrayList* a_pstArrayList) {
+	void ALInit(STArrayList* a_pstArrayList, COMPARE_FUNC a_pfnCompare) {
 		memset(a_pstArrayList, 0, sizeof(STArrayList));
 
 		a_pstArrayList->m_nSize = 5;
 		a_pstArrayList->m_pvVals = (void**)malloc(sizeof(void*) * a_pstArrayList->m_nSize);
+		a_pstArrayList->m_pfnCompare = a_pfnCompare;
 	}
 
 	void ALDestroy(STArrayList* a_pstArrayList) {
 		SAFE_FREE(a_pstArrayList->m_pvVals);
+	}
+
+	bool ALIsEmpty(STArrayList* a_pstArrayList) {
+		return a_pstArrayList->m_nNumVals <= 0;
 	}
 
 	bool ALIsValidIdx(STArrayList* a_pstArrayList, int a_nIdx) {
@@ -43,7 +48,7 @@ namespace Global {
 	int ALFindVal(STArrayList* a_pstArrayList, void* a_pvVal) {
 		for(int i = 0; i < a_pstArrayList->m_nNumVals; ++i) {
 			// 값이 존재 할 경우
-			if(a_pstArrayList->m_pvVals[i] == a_pvVal) {
+			if(a_pstArrayList->m_pfnCompare(a_pstArrayList->m_pvVals[i], a_pvVal) == 0) {
 				return i;
 			}
 		}

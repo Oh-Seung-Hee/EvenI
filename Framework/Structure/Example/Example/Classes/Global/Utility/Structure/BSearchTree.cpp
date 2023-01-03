@@ -4,17 +4,17 @@
 
 namespace Global {
 	/** 노드를 탐색한다 */
-	static STBTNode** BSTFindNode(STBTNode** a_pstNode, void* a_pvKey) {
-		// 노드가 없을 경우
-		if(*a_pstNode == NULL) {
+	static STBTreeNode** BSTFindNode(STBTreeNode** a_pstNode, void* a_pvKey, COMPARE_FUNC a_pfnCompare) {
+		// 노드가 없거나 키가 존재 할 경우
+		if(*a_pstNode == NULL || a_pfnCompare(a_pvKey, (*a_pstNode)->m_pvKey) == 0) {
 			return a_pstNode;
 		}
 
-		return BSTFindNode((a_pvKey < (*a_pstNode)->m_pvKey) ? &(*a_pstNode)->m_pstLChildNode : &(*a_pstNode)->m_pstRChildNode, a_pvKey);
+		return BSTFindNode((a_pfnCompare(a_pvKey, (*a_pstNode)->m_pvKey) < 0) ? &(*a_pstNode)->m_pstLChildNode : &(*a_pstNode)->m_pstRChildNode, a_pvKey, a_pfnCompare);
 	}
 
 	/** 전위 순회한다 */
-	static void BSTPreEnumerate(STBTNode* a_pstNode, void(*a_pfnCallback)(STBTNode*)) {
+	static void BSTPreEnumerate(STBTreeNode* a_pstNode, void(*a_pfnCallback)(STBTreeNode*)) {
 		// 노드가 존재 할 경우
 		if(a_pstNode != NULL) {
 			a_pfnCallback(a_pstNode);
@@ -25,7 +25,7 @@ namespace Global {
 	}
 
 	/** 중위 순회한다 */
-	static void BSTInEnumerate(STBTNode* a_pstNode, void(*a_pfnCallback)(STBTNode*)) {
+	static void BSTInEnumerate(STBTreeNode* a_pstNode, void(*a_pfnCallback)(STBTreeNode*)) {
 		// 노드가 존재 할 경우
 		if(a_pstNode != NULL) {
 			BSTInEnumerate(a_pstNode->m_pstLChildNode, a_pfnCallback);
@@ -36,7 +36,7 @@ namespace Global {
 	}
 
 	/** 후위 순회한다 */
-	static void BSTPostEnumerate(STBTNode* a_pstNode, void(*a_pfnCallback)(STBTNode*)) {
+	static void BSTPostEnumerate(STBTreeNode* a_pstNode, void(*a_pfnCallback)(STBTreeNode*)) {
 		// 노드가 존재 할 경우
 		if(a_pstNode != NULL) {
 			BSTPostEnumerate(a_pstNode->m_pstLChildNode, a_pfnCallback);
@@ -47,14 +47,14 @@ namespace Global {
 	}
 
 	/** 레벨 순회한다 */
-	static void BSTLevelEnumerate(STBTNode* a_pstNode, void(*a_pfnCallback)(STBTNode*)) {
+	static void BSTLevelEnumerate(STBTreeNode* a_pstNode, void(*a_pfnCallback)(STBTreeNode*)) {
 		STQueue stQueue;
 		QInit(&stQueue);
 
 		QEnqueue(&stQueue, a_pstNode);
 
 		while(!QIsEmpty(&stQueue)) {
-			STBTNode* pstNode = (STBTNode*)QDequeue(&stQueue);
+			STBTreeNode* pstNode = (STBTreeNode*)QDequeue(&stQueue);
 			a_pfnCallback(pstNode);
 
 			// 왼쪽 자식 노드가 존재 할 경우
@@ -69,14 +69,19 @@ namespace Global {
 		}
 	}
 
-	void BSTInit(STBSearchTree* a_pstBSearchTree) {
+	void BSTInit(STBSearchTree* a_pstBSearchTree, COMPARE_FUNC a_pfnCompare) {
 		memset(a_pstBSearchTree, 0, sizeof(STBSearchTree));
+		a_pstBSearchTree->m_pfnCompare = a_pfnCompare;
 	}
 
 	void BSTDestroy(STBSearchTree* a_pstBSearchTree) {
-		BSTEnumerate(a_pstBSearchTree, EBSTOrder::POST, [](STBTNode* a_pstNode) -> void {
+		BSTEnumerate(a_pstBSearchTree, EBSTOrder::POST, [](STBTreeNode* a_pstNode) -> void {
 			SAFE_FREE(a_pstNode);
 		});
+	}
+
+	bool BSTIsEmpty(STBSearchTree* a_pstBSearchTree) {
+		return a_pstBSearchTree->m_nNumVals <= 0;
 	}
 
 	int BSTGetNumVals(STBSearchTree* a_pstBSearchTree) {
@@ -84,12 +89,12 @@ namespace Global {
 	}
 
 	void* BSTGetVal(STBSearchTree* a_pstBSearchTree, void* a_pvKey) {
-		assert(BSTFindNode(&a_pstBSearchTree->m_pstRootNode, a_pvKey) != NULL);
-		return (*BSTFindNode(&a_pstBSearchTree->m_pstRootNode, a_pvKey))->m_pvVal;
+		assert(BSTFindNode(&a_pstBSearchTree->m_pstRootNode, a_pvKey, a_pstBSearchTree->m_pfnCompare) != NULL);
+		return (*BSTFindNode(&a_pstBSearchTree->m_pstRootNode, a_pvKey, a_pstBSearchTree->m_pfnCompare))->m_pvVal;
 	}
 
 	void BSTAddVal(STBSearchTree* a_pstBSearchTree, void* a_pvKey, void* a_pvVal) {
-		STBTNode** pstNode = BSTFindNode(&a_pstBSearchTree->m_pstRootNode, a_pvKey);
+		STBTreeNode** pstNode = BSTFindNode(&a_pstBSearchTree->m_pstRootNode, a_pvKey, a_pstBSearchTree->m_pfnCompare);
 
 		// 키가 없을 경우
 		if(*pstNode == NULL) {
@@ -99,13 +104,13 @@ namespace Global {
 	}
 
 	void BSTRemoveVal(STBSearchTree* a_pstBSearchTree, void* a_pvKey) {
-		STBTNode** pstNode = BSTFindNode(&a_pstBSearchTree->m_pstRootNode, a_pvKey);
+		STBTreeNode** pstNode = BSTFindNode(&a_pstBSearchTree->m_pstRootNode, a_pvKey, a_pstBSearchTree->m_pfnCompare);
 
 		// 키가 존재 할 경우
 		if(*pstNode != NULL) {
 			// 자식 노드가 모두 존재 할 경우
 			if((*pstNode)->m_pstLChildNode != NULL && (*pstNode)->m_pstRChildNode != NULL) {
-				STBTNode** pstRemoveNode = &(*pstNode)->m_pstRChildNode;
+				STBTreeNode** pstRemoveNode = &(*pstNode)->m_pstRChildNode;
 
 				while((*pstRemoveNode)->m_pstLChildNode != NULL) {
 					pstRemoveNode = &(*pstRemoveNode)->m_pstLChildNode;
@@ -117,7 +122,7 @@ namespace Global {
 				pstNode = pstRemoveNode;
 			}
 
-			STBTNode* pstRemoveNode = *pstNode;
+			STBTreeNode* pstRemoveNode = *pstNode;
 
 			// 왼쪽 자식 노드가 존재 할 경우
 			if(pstRemoveNode->m_pstLChildNode != NULL) {
@@ -130,7 +135,7 @@ namespace Global {
 		}
 	}
 
-	void BSTEnumerate(STBSearchTree* a_pstBSearchTree, EBSTOrder a_eOrder, void(*a_pfnCallback)(STBTNode*)) {
+	void BSTEnumerate(STBSearchTree* a_pstBSearchTree, EBSTOrder a_eOrder, void(*a_pfnCallback)(STBTreeNode*)) {
 		switch(a_eOrder) {
 			case EBSTOrder::PRE: BSTPreEnumerate(a_pstBSearchTree->m_pstRootNode, a_pfnCallback); break;
 			case EBSTOrder::IN: BSTInEnumerate(a_pstBSearchTree->m_pstRootNode, a_pfnCallback); break;

@@ -9,13 +9,17 @@ namespace Global {
 		int m_nNumVals;
 
 		void** m_pvVals;
+		COMPARE_FUNC m_pfnCompare;
 	};
 
 	/** 초기화 */
-	void ALInit(STArrayList* a_pstArrayList);
+	void ALInit(STArrayList* a_pstArrayList, COMPARE_FUNC a_pfnCompare);
 
 	/** 제거한다 */
 	void ALDestroy(STArrayList* a_pstArrayList);
+
+	/** 비어있는지 검사한다 */
+	bool ALIsEmpty(STArrayList* a_pstArrayList);
 
 	/** 인덱스 유효 여부를 검사한다 */
 	bool ALIsValidIdx(STArrayList* a_pstArrayList, int a_nIdx);

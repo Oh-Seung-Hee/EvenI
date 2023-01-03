@@ -106,6 +106,12 @@
     <ClInclude Include="Classes\Global\Function\GFunc.h">
       <Filter>Classes\Global\Function</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\PQueue.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\Hash.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Example_01\Example_01.cpp">
@@ -158,6 +164,12 @@
     </ClCompile>
     <ClCompile Include="Classes\Global\Function\GFunc.cpp">
       <Filter>Classes\Global\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\PQueue.cpp">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\Hash.cpp">
+      <Filter>Classes\Global\Utility\Structure</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -14,16 +14,20 @@ namespace Global {
 	/** 연결 리스트 */
 	struct STLinkedList {
 		int m_nNumVals;
+		COMPARE_FUNC m_pfnCompare;
 
 		STLLNode* m_pstHeadNode;
 		STLLNode* m_pstTailNode;
 	};
 
 	/** 초기화 */
-	void LLInit(STLinkedList* a_pstLinkedList);
+	void LLInit(STLinkedList* a_pstLinkedList, COMPARE_FUNC a_pfnCompare);
 
 	/** 제거한다 */
 	void LLDestroy(STLinkedList* a_pstLinkedList);
+
+	/** 비어있는지 검사한다 */
+	bool LLIsEmpty(STLinkedList* a_pstLinkedList);
 
 	/** 인덱스 유효 여부를 검사한다 */
 	bool LLIsValidIdx(STLinkedList* a_pstLinkedList, int a_nIdx);

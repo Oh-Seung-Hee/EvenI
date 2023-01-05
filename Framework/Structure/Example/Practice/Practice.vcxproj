@@ -131,10 +131,12 @@
   <ItemGroup>
     <ClCompile Include="Classes\Practice.cpp" />
     <ClCompile Include="Classes\Practice_01\Practice_01.cpp" />
+    <ClCompile Include="Classes\Practice_02\Practice_02.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h" />
     <ClInclude Include="Classes\Practice_01\Practice_01.h" />
+    <ClInclude Include="Classes\Practice_02\Practice_02.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

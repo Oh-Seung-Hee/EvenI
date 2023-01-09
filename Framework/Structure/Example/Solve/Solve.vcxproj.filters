@@ -23,6 +23,9 @@
     <Filter Include="Classes\Solve_01 %28스택%29">
       <UniqueIdentifier>{fa9641a2-a8f0-422b-8234-e47ee7b92aa4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Solve_02 %28큐%29">
+      <UniqueIdentifier>{30f6d108-c326-4dd2-8736-76e55762a310}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -34,6 +37,15 @@
     <ClInclude Include="Classes\Global\Utility\Structure\Stack.h">
       <Filter>Classes\Global\Utility\Structure</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Solve_02\Solve_02.h">
+      <Filter>Classes\Solve_02 %28큐%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\Queue.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\Dequeue.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Solve.cpp">
@@ -43,6 +55,15 @@
       <Filter>Classes\Solve_01 %28스택%29</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Global\Utility\Structure\Stack.cpp">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Solve_02\Solve_02.cpp">
+      <Filter>Classes\Solve_02 %28큐%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\Queue.cpp">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\Dequeue.cpp">
       <Filter>Classes\Global\Utility\Structure</Filter>
     </ClCompile>
   </ItemGroup>

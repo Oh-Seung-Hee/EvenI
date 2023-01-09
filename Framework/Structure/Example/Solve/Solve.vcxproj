@@ -130,13 +130,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h" />
+    <ClInclude Include="Classes\Global\Utility\Structure\Dequeue.h" />
+    <ClInclude Include="Classes\Global\Utility\Structure\Queue.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\Stack.h" />
     <ClInclude Include="Classes\Solve_01\Solve_01.h" />
+    <ClInclude Include="Classes\Solve_02\Solve_02.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Classes\Global\Utility\Structure\Dequeue.cpp" />
+    <ClCompile Include="Classes\Global\Utility\Structure\Queue.cpp" />
     <ClCompile Include="Classes\Global\Utility\Structure\Stack.cpp" />
     <ClCompile Include="Classes\Solve.cpp" />
     <ClCompile Include="Classes\Solve_01\Solve_01.cpp" />
+    <ClCompile Include="Classes\Solve_02\Solve_02.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

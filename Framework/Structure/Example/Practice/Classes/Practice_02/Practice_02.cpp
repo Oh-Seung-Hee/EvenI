@@ -1,4 +1,4 @@
-#define P02_01
+//#define P02_01
 #define P02_02
 
 #include "Practice_02.h"
@@ -18,6 +18,7 @@ namespace P02 {
 	void init(queue* q) {
 		// 큐 사이즈 할당
 		q->size = 10;
+		q->count = 0;
 		q->data = (int*)malloc(sizeof(int) * q->size);
 
 		// 큐의 front와 rear 위치 초기화
@@ -25,10 +26,10 @@ namespace P02 {
 	}
 
 	int isEmpty(queue* q) {
-		if(q->front == q->rear) {	// 큐가 비어있으면 0을 반환
-			return 0;
+		if(q->count <= 0) {	// 큐가 비어있으면 0을 반환
+			return 1;
 		}
-		return 1;	// 큐가 비어있지 않으면 1을 반환
+		return 0;	// 큐가 비어있지 않으면 1을 반환
 	}
 
 	void enqueue(queue* q, int num) {
@@ -56,17 +57,25 @@ namespace P02 {
 		// 큐에 공간이 있는 경우
 		q->data[q->rear++] = num;
 		q->count++;
+
+		if(q->rear >= q->size) {
+			q->rear = 0;
+		}
 	}
 
 	int dequeue(queue* q) {
 		// 큐가 비어있는 경우
-		if(isEmpty(q) == 0) {
+		if(isEmpty(q) == 1) {
 			printf("큐가 비어있습니다\n");
 		}
 
 		// 큐에 데이터가 있는 경우
 		int result = q->data[q->front++];
 		q->count--;
+
+		if(q->front >= q->size) {
+			q->front = 0;
+		}
 
 		return result;
 	}
@@ -88,6 +97,7 @@ namespace P02 {
 	void init(queue* q) {
 		// 큐 사이즈 할당
 		q->size = 10;
+		q->count = 0;
 		q->data = (int*)malloc(sizeof(int) * q->size);
 
 		// 큐의 front와 rear 위치 초기화
@@ -95,10 +105,10 @@ namespace P02 {
 	}
 
 	int isEmpty(queue* q) {
-		if(q->front == q->rear) {	// 큐가 비어있으면 0을 반환
-			return 0;
+		if(q->count <= 0) {	// 큐가 비어있으면 0을 반환
+			return 1;
 		}
-		return 1;	// 큐가 비어있지 않으면 1을 반환
+		return 0;	// 큐가 비어있지 않으면 1을 반환
 	}
 
 	void frontEnqueue(queue* q, int num) {	// 전방에서 데이터 삽입
@@ -120,8 +130,14 @@ namespace P02 {
 			free(tmp);
 		}
 
+		q->front -= 1;
+
+		if(q->front < 0) {
+			q->front = q->size - 1;
+		}
+
 		// 큐에 공간이 있는 경우
-		q->data[--q->front] = num;
+		q->data[q->front] = num;
 		q->count++;
 	}
 
@@ -147,11 +163,15 @@ namespace P02 {
 		// 큐에 공간이 있는 경우
 		q->data[q->rear++] = num;
 		q->count++;
+
+		if(q->rear >= q->size) {
+			q->rear = 0;
+		}
 	}
 
 	int frontDequeue(queue* q) {	// 전방에서 데이터 삭제
 		// 큐가 비어있는 경우
-		if(isEmpty(q) == 0) {
+		if(isEmpty(q) == 1) {
 			printf("큐가 비어있습니다\n");
 		}
 
@@ -159,17 +179,27 @@ namespace P02 {
 		int result = q->data[q->front++];
 		q->count--;
 
+		if(q->front >= q->size) {
+			q->front = 0;
+		}
+
 		return result;
 	}
 
 	int rearDequeue(queue* q) {		// 후방에서 데이터 삭제
 		// 큐가 비어있는 경우
-		if(isEmpty(q) == 0) {
+		if(isEmpty(q) == 1) {
 			printf("큐가 비어있습니다\n");
 		}
 
+		q->rear -= 1;
+
+		if(q->rear < 0) {
+			q->rear = q->size - 1;
+		}
+
 		// 큐에 데이터가 있는 경우
-		int result = q->data[--q->rear];
+		int result = q->data[q->rear];
 		q->count--;
 
 		return result;

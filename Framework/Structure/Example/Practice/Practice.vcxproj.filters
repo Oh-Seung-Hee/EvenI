@@ -20,6 +20,12 @@
     <Filter Include="Classes\Practice_02 %28큐%29">
       <UniqueIdentifier>{ffaf9ef6-3dac-411b-8a75-3f2ab1df5cb6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Practice_03 %28배열 리스트%29">
+      <UniqueIdentifier>{fcd59507-7726-4fab-b4ac-94c90f8cb353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Practice_04 %28연결 리스트%29">
+      <UniqueIdentifier>{075d2902-36e9-49d3-a222-baa4c312f2e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Practice.cpp">
@@ -31,6 +37,12 @@
     <ClCompile Include="Classes\Practice_02\Practice_02.cpp">
       <Filter>Classes\Practice_02 %28큐%29</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Practice_04\Practice_04.cpp">
+      <Filter>Classes\Practice_04 %28연결 리스트%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Practice_03\Practice_03.cpp">
+      <Filter>Classes\Practice_03 %28배열 리스트%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -41,6 +53,12 @@
     </ClInclude>
     <ClInclude Include="Classes\Practice_02\Practice_02.h">
       <Filter>Classes\Practice_02 %28큐%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Practice_03\Practice_03.h">
+      <Filter>Classes\Practice_03 %28배열 리스트%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Practice_04\Practice_04.h">
+      <Filter>Classes\Practice_04 %28연결 리스트%29</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
